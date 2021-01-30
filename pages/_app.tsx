@@ -1,6 +1,6 @@
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { LivePrices } from 'components'
+import { TopBar, LivePrices } from 'components'
 import { Container, ThemeProvider } from '@material-ui/core'
 import Theme from 'styles'
 import Store from 'states'
@@ -11,7 +11,8 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
     <Provider store={Store}>
       <ThemeProvider theme={Theme}>
         <LivePrices />
-        <Container>
+        <Container maxWidth="lg">
+          <TopBar />
           <Component {...pageProps} />
         </Container>
       </ThemeProvider>
