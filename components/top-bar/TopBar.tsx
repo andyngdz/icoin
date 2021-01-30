@@ -23,7 +23,7 @@ const useStyles = makeStyles(
 
 const TopBar = () => {
   const classes = useStyles()
-  const { loading, value } = useAsync(API.getGlobal)
+  const { loading, value } = useAsync(API.getGlobals)
 
   if (!loading) {
     const { data } = value.data

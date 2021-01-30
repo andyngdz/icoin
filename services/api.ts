@@ -6,7 +6,7 @@ const CoingeckoAPI = axios.create({
 })
 
 const API: IAPI = {
-  getGlobal: () => CoingeckoAPI.get('/global'),
+  getGlobals: () => CoingeckoAPI.get('/global'),
 }
 
 export { API }
