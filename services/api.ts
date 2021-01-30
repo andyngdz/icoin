@@ -9,4 +9,4 @@ const API: IAPI = {
   getGlobal: () => CoingeckoAPI.get('/global'),
 }
 
-export default API
+export { API }

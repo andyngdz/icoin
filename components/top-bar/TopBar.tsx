@@ -1,6 +1,6 @@
-import { useAsync } from 'react-use'
+import { API, Format } from 'services'
 import { makeStyles, Typography } from '@material-ui/core'
-import API from 'services/api'
+import { useAsync } from 'react-use'
 
 const useStyles = makeStyles(
   (theme) => ({
@@ -48,19 +48,19 @@ const TopBar = () => {
           <Typography variant="subtitle2" component="span">
             Market Cap:&nbsp;
             <Typography variant="subtitle2" component="span" color="primary">
-              {data.total_market_cap.usd}
+              {Format.currency(data.total_market_cap.usd)}
             </Typography>
           </Typography>
           <Typography variant="subtitle2" component="span">
-            24H Volume:&nbsp;
+            24h Volume:&nbsp;
             <Typography variant="subtitle2" component="span" color="primary">
-              {data.market_cap_change_percentage_24h_usd}
+              {Format.currency(data.total_volume.usd)}
             </Typography>
           </Typography>
           <Typography variant="subtitle2" component="span">
             BTC Dominance:&nbsp;
             <Typography variant="subtitle2" component="span" color="primary">
-              {data.market_cap_percentage.btc}
+              {data.market_cap_percentage.btc.toFixed(2)}%
             </Typography>
           </Typography>
         </div>
