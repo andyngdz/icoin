@@ -1,16 +1,19 @@
+import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import { LivePrices } from 'components'
-import { ThemeProvider } from '@material-ui/core'
+import { Container, ThemeProvider } from '@material-ui/core'
 import Theme from 'styles'
 import Store from 'states'
 import 'styles/globals.css'
 
-const MyApp = ({ Component, pageProps }) => {
+const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
     <Provider store={Store}>
       <ThemeProvider theme={Theme}>
         <LivePrices />
-        <Component {...pageProps} />
+        <Container>
+          <Component {...pageProps} />
+        </Container>
       </ThemeProvider>
     </Provider>
   )
