@@ -16,7 +16,7 @@ const useLivePrices = () => {
 
   useEffect(() => {
     liveUpdate()
-  }, [liveUpdate])
+  }, [])
 }
 
 export default useLivePrices
