@@ -58,10 +58,13 @@ const TopBar = () => {
             </Typography>
           </Typography>
           <Typography variant="subtitle2" component="span">
-            BTC Dominance:&nbsp;
+            Dominance:&nbsp;
             <Typography variant="subtitle2" component="span" color="primary">
-              {data.market_cap_percentage.btc.toFixed(2)}%
+              BTC {data.market_cap_percentage.btc.toFixed(2)}%
             </Typography>
+          </Typography>
+          <Typography variant="subtitle2" component="span" color="primary">
+            ETH {data.market_cap_percentage.eth.toFixed(2)}%
           </Typography>
         </div>
       </div>
