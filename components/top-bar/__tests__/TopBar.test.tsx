@@ -1,9 +1,9 @@
-import { TopBar } from 'components'
-import { customRender } from 'services'
+import { render } from 'services/test-utils'
+import { TopBar } from 'components/top-bar/TopBar'
 
 describe('TopBar', () => {
   it('Should render correctly', () => {
-    const renderer = customRender(<TopBar />)
+    const renderer = render(<TopBar />)
     expect(renderer).toMatchSnapshot()
   })
 })
