@@ -20,7 +20,7 @@ const TopBar = () => {
   const { loading, value } = useAsync(API.getGlobals)
 
   return (
-    <AppBar position="relative" color="default" variant="outlined">
+    <AppBar position="relative" color="inherit" variant="outlined">
       <Toolbar className={classes.toolBar}>
         {!loading && (
           <Grow in>

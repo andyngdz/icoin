@@ -5,7 +5,7 @@ import { Menu } from 'components/header/Menu'
 
 const Header = () => {
   return (
-    <AppBar position="relative" color="default" elevation={0}>
+    <AppBar position="relative" color="inherit" elevation={0}>
       <Toolbar>
         <ICoinLogo />
         <Menu />

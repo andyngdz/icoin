@@ -1,4 +1,5 @@
-import { Link, Typography, Grid, makeStyles } from '@material-ui/core'
+import { Grid, makeStyles } from '@material-ui/core'
+import { Route } from 'components/common'
 import React from 'react'
 
 const useStyles = makeStyles(
@@ -20,15 +21,9 @@ const Menu = () => {
     <Grid container>
       <Grid xs={12} sm={8} lg={4} item>
         <div className={classes.menu}>
-          <Link color="inherit" href="/">
-            <Typography variant="subtitle2">Market Cap</Typography>
-          </Link>
-          <Link color="inherit" href="/trading-volume">
-            <Typography variant="subtitle2">Trading Volume</Typography>
-          </Link>
-          <Link color="inherit" href="/trading-volume">
-            <Typography variant="subtitle2">Trending</Typography>
-          </Link>
+          <Route href="/" title="Market Cap" />
+          <Route href="/trading-volume" title="Trading Volume" />
+          <Route href="/trending" title="Trending" />
         </div>
       </Grid>
     </Grid>
