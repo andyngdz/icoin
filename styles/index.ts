@@ -14,6 +14,12 @@ const Theme = createMuiTheme({
     common: Colors,
   },
 
+  props: {
+    MuiLink: {
+      underline: 'none',
+    },
+  },
+
   typography: {
     fontSize: 13,
     fontFamily: "'Inter', sans-serif;",
