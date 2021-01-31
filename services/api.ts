@@ -12,10 +12,15 @@ const CoinCapAPI = axios.create({
 const API: IAPI = {
   getGlobals: () => CoingeckoAPI.get('/global'),
 
-  getAssets: (params) =>
-    CoinCapAPI.get('/assets', {
+  getAssets: (
+    params = {
+      limit: 30,
+    }
+  ) => {
+    return CoinCapAPI.get('/assets', {
       params,
-    }),
+    })
+  },
 }
 
 export { API }
