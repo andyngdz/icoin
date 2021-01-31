@@ -29,7 +29,7 @@ const TopBar = () => {
     const { data } = value.data
 
     return (
-      <AppBar color="default" variant="outlined">
+      <AppBar position="relative" color="default" variant="outlined">
         <Toolbar className={classes.topbar}>
           <div className={classes.info}>
             <Typography variant="subtitle2" component="span">
