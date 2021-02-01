@@ -1,10 +1,13 @@
-import { AssetNameAndDescription } from 'components'
-import { Format } from 'services'
+import { AssetNameAndDescription, usePriceDirection } from 'components'
+import { Format, PriceDirection } from 'services'
 import { IAsset } from 'types'
-import { IRootStore } from 'types'
-import { TableRow, TableCell, Typography, makeStyles } from '@material-ui/core'
-import { usePrevious } from 'react-use'
-import { useSelector } from 'react-redux'
+import {
+  TableRow,
+  TableCell,
+  Typography,
+  makeStyles,
+  fade,
+} from '@material-ui/core'
 import clsx from 'clsx'
 
 interface IAssetItemProps {
@@ -16,11 +19,18 @@ const useStyles = makeStyles(
     asset: {
       backgroundColor: theme.palette.common.white,
       borderRadius: theme.shape.borderRadius,
+      transition: theme.transitions.create(['background-color'], {
+        duration: theme.transitions.duration.shortest,
+      }),
     },
 
-    up: {},
+    up: {
+      backgroundColor: fade(theme.palette.success.light, 0.15),
+    },
 
-    down: {},
+    down: {
+      backgroundColor: fade(theme.palette.error.light, 0.15),
+    },
 
     spacer: {
       height: theme.spacing(2),
@@ -33,7 +43,7 @@ const useStyles = makeStyles(
 
 const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
   const classes = useStyles()
-  let {
+  const {
     changePercent24Hr,
     explorer,
     id,
@@ -45,22 +55,15 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     symbol,
     volumeUsd24Hr,
   } = asset
-
-  priceUsd =
-    useSelector((store: IRootStore) => store.prices.data[id]) || priceUsd
-
-  const prevPriceUsd = usePrevious(priceUsd)
+  const { price, direction } = usePriceDirection(id, priceUsd)
 
   return (
     <>
       <TableRow
-        className={clsx(
-          classes.asset,
-          prevPriceUsd && {
-            [classes.up]: priceUsd > prevPriceUsd,
-            [classes.down]: priceUsd < prevPriceUsd,
-          }
-        )}
+        className={clsx(classes.asset, {
+          [classes.up]: direction === PriceDirection.UP,
+          [classes.down]: direction === PriceDirection.DOWN,
+        })}
       >
         <TableCell>
           <Typography variant="button">{rank}.</Typography>
@@ -78,7 +81,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
           </Typography>
         </TableCell>
         <TableCell align="right">
-          <Typography variant="button">{Format.currency(priceUsd)}</Typography>
+          <Typography variant="button">{Format.currency(price)}</Typography>
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">

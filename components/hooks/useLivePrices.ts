@@ -19,4 +19,4 @@ const useLivePrices = () => {
   }, [])
 }
 
-export default useLivePrices
+export { useLivePrices }
