@@ -35,6 +35,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
     priceUsd,
     volumeUsd24Hr,
     changePercent24Hr,
+    explorer,
   } = asset
 
   return (
@@ -44,7 +45,11 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
           <Typography variant="button">{rank}.</Typography>
         </TableCell>
         <TableCell>
-          <AssetNameAndDescription symbol={symbol} name={name} />
+          <AssetNameAndDescription
+            symbol={symbol}
+            name={name}
+            explorer={explorer}
+          />
         </TableCell>
         <TableCell align="right">{Format.currency(marketCapUsd)}</TableCell>
         <TableCell align="right">{Format.currency(priceUsd)}</TableCell>
