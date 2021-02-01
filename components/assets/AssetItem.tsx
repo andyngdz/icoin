@@ -51,11 +51,29 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
             explorer={explorer}
           />
         </TableCell>
-        <TableCell align="right">{Format.currency(marketCapUsd)}</TableCell>
-        <TableCell align="right">{Format.currency(priceUsd)}</TableCell>
-        <TableCell align="right">{numberFormatter.format(supply)}</TableCell>
-        <TableCell align="right">{Format.currency(volumeUsd24Hr)}</TableCell>
-        <TableCell align="right">{Format.percent(changePercent24Hr)}</TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(marketCapUsd)}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">{Format.currency(priceUsd)}</Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(supply)} {symbol}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.currency(volumeUsd24Hr)}
+          </Typography>
+        </TableCell>
+        <TableCell align="right">
+          <Typography variant="button">
+            {Format.percent(changePercent24Hr)}
+          </Typography>
+        </TableCell>
         <TableCell align="right">Price Graph</TableCell>
       </TableRow>
       <TableRow className={classes.spacer} />
