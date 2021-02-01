@@ -1,5 +1,6 @@
 import { AssetNameAndDescription, usePriceDirection } from 'components'
-import { Format, PriceDirection } from 'services'
+import { Format, numberFormatter, PriceDirection } from 'services'
+import { DURATION } from 'data'
 import { IAsset } from 'types'
 import {
   TableRow,
@@ -20,7 +21,7 @@ const useStyles = makeStyles(
       backgroundColor: theme.palette.common.white,
       borderRadius: theme.shape.borderRadius,
       transition: theme.transitions.create(['background-color'], {
-        duration: theme.transitions.duration.shortest,
+        duration: DURATION,
       }),
     },
 
@@ -72,7 +73,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">
-            {Format.currency(marketCapUsd)}
+            {Format.bigNumber(marketCapUsd)}
           </Typography>
         </TableCell>
         <TableCell align="right">
@@ -80,12 +81,12 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">
-            {Format.currency(supply)} {symbol}
+            {numberFormatter.format(supply)} {symbol}
           </Typography>
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">
-            {Format.currency(volumeUsd24Hr)}
+            {Format.bigNumber(volumeUsd24Hr)}
           </Typography>
         </TableCell>
         <TableCell align="right">

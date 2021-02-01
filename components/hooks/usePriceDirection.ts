@@ -1,3 +1,4 @@
+import { DURATION } from 'data'
 import { IRootStore } from 'types'
 import { PriceDirection } from 'services'
 import { useSelector } from 'react-redux'
@@ -17,7 +18,7 @@ const usePriceDirection = (id: string, initPrice: number) => {
 
     const clearDirectionTimeoutId = setTimeout(
       () => setDirection(PriceDirection.VOID),
-      150
+      DURATION
     )
 
     return () => clearTimeout(clearDirectionTimeoutId)

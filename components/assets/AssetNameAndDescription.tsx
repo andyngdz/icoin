@@ -35,7 +35,7 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
         src={[CDN.getIcon(symbol.toLowerCase()), CDN.defaultIcon]}
         alt={name}
       />
-      <Typography variant="h6">{name}</Typography>
+      <Typography variant="button">{name}</Typography>
     </div>
   )
 }
