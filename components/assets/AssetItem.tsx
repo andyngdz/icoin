@@ -23,6 +23,16 @@ const useStyles = makeStyles(
       transition: theme.transitions.create(['background-color'], {
         duration: DURATION,
       }),
+
+      '& > td:first-child': {
+        borderTopLeftRadius: theme.shape.borderRadius,
+        borderBottomLeftRadius: theme.shape.borderRadius,
+      },
+
+      '& > td:last-child': {
+        borderTopRightRadius: theme.shape.borderRadius,
+        borderBottomRightRadius: theme.shape.borderRadius,
+      },
     },
 
     up: {
