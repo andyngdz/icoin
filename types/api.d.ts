@@ -1,9 +1,8 @@
 import { AxiosResponse } from 'axios'
-import { IGlobal } from 'types/global'
-import { IAssetParams } from 'types/assets'
+import { IGlobal, IAssetParams, IAssetResponse } from 'types'
 
 export interface IAPI {
   getGlobals: () => Promise<AxiosResponse<IGlobal>>
 
-  getAssets: (params?: IAssetParams) => Promise<AxiosResponse>
+  getAssets: (params?: IAssetParams) => Promise<AxiosResponse<IAssetResponse>>
 }
