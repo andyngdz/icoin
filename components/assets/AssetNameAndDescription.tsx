@@ -19,6 +19,10 @@ const useStyles = makeStyles(
         height: theme.spacing(3.5),
       },
     },
+
+    explorer: {
+      textTransform: 'capitalize',
+    },
   }),
   {
     name: 'AssetNameAndDescription',
@@ -42,7 +46,12 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
         <Typography variant="h6">{name}</Typography>
       </div>
       <Button startIcon={<ExploreIcon />}>
-        <Link href={explorer} color="inherit" target="_blank">
+        <Link
+          className={classes.explorer}
+          href={explorer}
+          color="inherit"
+          target="_blank"
+        >
           Explorer
         </Link>
       </Button>
