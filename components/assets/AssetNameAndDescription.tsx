@@ -1,7 +1,8 @@
 import { CDN } from 'services'
 import { IAsset } from 'types'
 import { Img } from 'react-image'
-import { Typography, makeStyles } from '@material-ui/core'
+import { Typography, Button, Link, makeStyles } from '@material-ui/core'
+import ExploreIcon from '@material-ui/icons/Explore'
 
 interface IAssetNameAndDescriptionProps
   extends Pick<IAsset, 'symbol' | 'name' | 'explorer'> {}
@@ -11,6 +12,7 @@ const useStyles = makeStyles(
     name: {
       display: 'flex',
       alignItems: 'center',
+      paddingBottom: theme.spacing(2),
 
       '& > img': {
         paddingRight: theme.spacing(),
@@ -39,6 +41,11 @@ const AssetNameAndDescription: React.FC<IAssetNameAndDescriptionProps> = ({
         />
         <Typography variant="h6">{name}</Typography>
       </div>
+      <Button startIcon={<ExploreIcon />}>
+        <Link href={explorer} color="inherit" target="_blank">
+          Explorer
+        </Link>
+      </Button>
     </div>
   )
 }

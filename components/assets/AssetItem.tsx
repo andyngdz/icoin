@@ -1,5 +1,5 @@
 import { AssetNameAndDescription } from 'components'
-import { Format, numberFormatter } from 'services'
+import { Format } from 'services'
 import { IAsset } from 'types'
 import { TableRow, TableCell, Typography, makeStyles } from '@material-ui/core'
 
