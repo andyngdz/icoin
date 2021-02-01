@@ -25,11 +25,11 @@ const useStyles = makeStyles(
     },
 
     up: {
-      backgroundColor: fade(theme.palette.success.light, 0.15),
+      backgroundColor: fade(theme.palette.success.light, 0.08),
     },
 
     down: {
-      backgroundColor: fade(theme.palette.error.light, 0.15),
+      backgroundColor: fade(theme.palette.error.light, 0.08),
     },
 
     spacer: {
@@ -45,7 +45,6 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
   const classes = useStyles()
   const {
     changePercent24Hr,
-    explorer,
     id,
     marketCapUsd,
     name,
@@ -69,11 +68,7 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
           <Typography variant="button">{rank}.</Typography>
         </TableCell>
         <TableCell>
-          <AssetNameAndDescription
-            symbol={symbol}
-            name={name}
-            explorer={explorer}
-          />
+          <AssetNameAndDescription symbol={symbol} name={name} />
         </TableCell>
         <TableCell align="right">
           <Typography variant="button">
