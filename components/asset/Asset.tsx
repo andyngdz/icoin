@@ -1,19 +1,21 @@
+import { AssetSummary } from 'components'
 import { Container } from '@material-ui/core'
-import { useQuery, COIN_INFORMATION } from 'apollo'
 import { useRouter } from 'next/router'
+import { isString } from 'lodash'
 
 const Asset: React.FC = () => {
   const router = useRouter()
   const { id } = router.query
-  useQuery(COIN_INFORMATION, {
-    variables: { id }
-  })
 
-  return (
-    <Container>
-      <div>asdasdasdasdjkhasdjkhasjdhksad</div>
-    </Container>
-  )
+  if (isString(id)) {
+    return (
+      <Container>
+        <AssetSummary id={id} />
+      </Container>
+    )
+  }
+
+  return <></>
 }
 
 export { Asset }

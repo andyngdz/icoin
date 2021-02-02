@@ -14,6 +14,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          <script src="/pace.min.js" />
         </body>
       </Html>
     )
@@ -26,7 +27,7 @@ MyDocument.getInitialProps = async ctx => {
 
   ctx.renderPage = () =>
     originalRenderPage({
-      enhanceApp: App => props => sheets.collect(<App {...props} />),
+      enhanceApp: App => props => sheets.collect(<App {...props} />)
     })
 
   const initialProps = await Document.getInitialProps(ctx)
@@ -35,7 +36,7 @@ MyDocument.getInitialProps = async ctx => {
     ...initialProps,
     styles: [
       ...React.Children.toArray(initialProps.styles),
-      sheets.getStyleElement(),
-    ],
+      sheets.getStyleElement()
+    ]
   }
 }

@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiContainer-root MuiContainer-maxWidthLg"
+        class="MuiContainer-root Assets-container-1 MuiContainer-maxWidthLg"
       >
         <div
-          class="MuiTableContainer-root"
+          class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
         >
           <table
             class="MuiTable-root"
@@ -68,7 +68,7 @@ Object {
               class="MuiTableBody-root"
             >
               <tr
-                class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+                class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -147,10 +147,7 @@ Object {
                 </td>
               </tr>
               <tr
-                class="MuiTableRow-root AssetItem-spacer-4"
-              />
-              <tr
-                class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+                class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
               >
                 <td
                   class="MuiTableCell-root MuiTableCell-body"
@@ -228,9 +225,6 @@ Object {
                   </span>
                 </td>
               </tr>
-              <tr
-                class="MuiTableRow-root AssetItem-spacer-4"
-              />
             </tbody>
           </table>
         </div>
@@ -239,10 +233,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiContainer-root MuiContainer-maxWidthLg"
+      class="MuiContainer-root Assets-container-1 MuiContainer-maxWidthLg"
     >
       <div
-        class="MuiTableContainer-root"
+        class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation1 MuiPaper-rounded"
       >
         <table
           class="MuiTable-root"
@@ -301,7 +295,7 @@ Object {
             class="MuiTableBody-root"
           >
             <tr
-              class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+              class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"
@@ -380,10 +374,7 @@ Object {
               </td>
             </tr>
             <tr
-              class="MuiTableRow-root AssetItem-spacer-4"
-            />
-            <tr
-              class="MuiTableRow-root AssetItem-asset-1 AssetItem-down-3"
+              class="MuiTableRow-root AssetItem-asset-2 AssetItem-down-4"
             >
               <td
                 class="MuiTableCell-root MuiTableCell-body"
@@ -461,9 +452,6 @@ Object {
                 </span>
               </td>
             </tr>
-            <tr
-              class="MuiTableRow-root AssetItem-spacer-4"
-            />
           </tbody>
         </table>
       </div>
