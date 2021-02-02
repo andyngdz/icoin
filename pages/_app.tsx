@@ -1,3 +1,5 @@
+import { apolloClient } from 'services'
+import { ApolloProvider } from '@apollo/client'
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import { ThemeProvider, CssBaseline } from '@material-ui/core'
@@ -17,14 +19,16 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
 
   return (
     <Provider store={Store}>
-      <ThemeProvider theme={Theme}>
-        <CssBaseline />
-        <LivePrices />
-        <TopBar />
-        <Header />
-        <Search />
-        <Component {...pageProps} />
-      </ThemeProvider>
+      <ApolloProvider client={apolloClient}>
+        <ThemeProvider theme={Theme}>
+          <CssBaseline />
+          <LivePrices />
+          <TopBar />
+          <Header />
+          <Search />
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </ApolloProvider>
     </Provider>
   )
 }
