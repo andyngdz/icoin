@@ -1,5 +1,4 @@
-import { apolloClient } from 'services'
-import { ApolloProvider } from '@apollo/client'
+import { ApolloProvider, apolloClient } from 'apollo'
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
 import { ThemeProvider, CssBaseline } from '@material-ui/core'
