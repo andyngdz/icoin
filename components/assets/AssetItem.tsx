@@ -20,7 +20,7 @@ interface IAssetItemProps {
 }
 
 const useStyles = makeStyles(
-  (theme) => ({
+  theme => ({
     asset: {
       backgroundColor: theme.palette.common.white,
       borderRadius: theme.shape.borderRadius,

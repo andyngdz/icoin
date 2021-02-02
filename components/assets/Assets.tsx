@@ -33,7 +33,7 @@ const Assets = () => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {data.map((asset) => (
+              {data.map(asset => (
                 <AssetItem key={asset.id} asset={asset} />
               ))}
             </TableBody>
