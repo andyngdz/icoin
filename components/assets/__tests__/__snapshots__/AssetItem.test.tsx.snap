@@ -89,11 +89,6 @@ Object {
                 3.18%
               </span>
             </td>
-            <td
-              class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-            >
-              Price Graph
-            </td>
           </tr>
           <tr
             class="MuiTableRow-root AssetItem-spacer-4"
@@ -186,11 +181,6 @@ Object {
             >
               3.18%
             </span>
-          </td>
-          <td
-            class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-          >
-            Price Graph
           </td>
         </tr>
         <tr

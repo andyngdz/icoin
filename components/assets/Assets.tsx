@@ -30,7 +30,6 @@ const Assets = () => {
                 <TableCell align="right">Circularing Supply</TableCell>
                 <TableCell align="right">Volume</TableCell>
                 <TableCell align="right">Change (24h)</TableCell>
-                <TableCell align="right">Price Graph</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>

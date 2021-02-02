@@ -62,12 +62,6 @@ Object {
                 >
                   Change (24h)
                 </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Price Graph
-                </th>
               </tr>
             </thead>
             <tbody
@@ -151,11 +145,6 @@ Object {
                     3.15%
                   </span>
                 </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  Price Graph
-                </td>
               </tr>
               <tr
                 class="MuiTableRow-root AssetItem-spacer-4"
@@ -238,11 +227,6 @@ Object {
                     7.16%
                   </span>
                 </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  Price Graph
-                </td>
               </tr>
               <tr
                 class="MuiTableRow-root AssetItem-spacer-4"
@@ -310,12 +294,6 @@ Object {
                 scope="col"
               >
                 Change (24h)
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Price Graph
               </th>
             </tr>
           </thead>
@@ -400,11 +378,6 @@ Object {
                   3.15%
                 </span>
               </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                Price Graph
-              </td>
             </tr>
             <tr
               class="MuiTableRow-root AssetItem-spacer-4"
@@ -486,11 +459,6 @@ Object {
                 >
                   7.16%
                 </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                Price Graph
               </td>
             </tr>
             <tr

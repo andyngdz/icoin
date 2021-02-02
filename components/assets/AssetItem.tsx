@@ -108,7 +108,6 @@ const AssetItem: React.FC<IAssetItemProps> = ({ asset }) => {
             {Format.percent(changePercent24Hr)}
           </ValueColor>
         </TableCell>
-        <TableCell align="right">Price Graph</TableCell>
       </TableRow>
       <TableRow className={classes.spacer} />
     </>
