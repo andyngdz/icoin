@@ -1,5 +1,4 @@
 export * from './asset/Asset'
-export * from './asset/AssetRanking'
 export * from './asset/AssetSummary'
 export * from './assets/AssetItem'
 export * from './assets/AssetNameAndDescription'

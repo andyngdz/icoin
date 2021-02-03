@@ -5,17 +5,14 @@ import {
   Link,
   Grid,
   Box,
-  Chip,
   makeStyles
 } from '@material-ui/core'
-import { Format } from 'services'
+import { Format, numberFormatter } from 'services'
 import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { usePriceDirection, AssetRanking } from 'components'
+import { usePriceDirection } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 import StarIcon from '@material-ui/icons/Star'
-import ExploreIcon from '@material-ui/icons/Explore'
-import HomeIcon from '@material-ui/icons/Home'
 
 interface IAssetSummaryContent extends ICommonRoutePrams {
   summary: IAssetSummary
@@ -140,7 +137,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
               </Typography>
               <Typography variant="h5">
                 <Box fontWeight="fontWeightBold">
-                  {Format.bigNumber(supply)}
+                  {numberFormatter.format(supply)}
                 </Box>
               </Typography>
             </Grid>
