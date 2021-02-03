@@ -6,14 +6,14 @@ import { useState, useEffect } from 'react'
 
 const usePriceDirection = (id: string, initPrice: number) => {
   const [direction, setDirection] = useState(PriceDirection.VOID)
-  const livePrice = useSelector((store: IRootStore) => store.prices.data[id])
-  const price = livePrice || initPrice
+  const [price, setPrice] = useState(initPrice)
+  const prices = useSelector((store: IRootStore) => store.prices.data)
+  const livePrice = prices[id]
 
   useEffect(() => {
-    if (livePrice > initPrice) {
-      setDirection(PriceDirection.UP)
-    } else {
-      setDirection(PriceDirection.DOWN)
+    if (livePrice && livePrice !== price) {
+      setDirection(livePrice > price ? PriceDirection.UP : PriceDirection.DOWN)
+      setPrice(livePrice)
     }
 
     const clearDirectionTimeoutId = setTimeout(
@@ -22,7 +22,7 @@ const usePriceDirection = (id: string, initPrice: number) => {
     )
 
     return () => clearTimeout(clearDirectionTimeoutId)
-  }, [livePrice, initPrice])
+  }, [livePrice, price])
 
   return { direction, price }
 }
