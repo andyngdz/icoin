@@ -3,13 +3,19 @@ import {
   Typography,
   Button,
   Link,
+  Grid,
+  Box,
+  Chip,
   makeStyles
 } from '@material-ui/core'
 import { Format } from 'services'
 import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { usePriceDirection } from 'components'
+import { usePriceDirection, AssetRanking } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
+import StarIcon from '@material-ui/icons/Star'
+import ExploreIcon from '@material-ui/icons/Explore'
+import HomeIcon from '@material-ui/icons/Home'
 
 interface IAssetSummaryContent extends ICommonRoutePrams {
   summary: IAssetSummary
@@ -28,13 +34,11 @@ const useStyles = makeStyles(
     },
 
     information: {
-      display: 'flex',
-      alignItems: 'flex-start',
-      justifyContent: 'space-between'
+      paddingBottom: theme.spacing(3)
     },
 
     firstRow: {
-      paddingBottom: theme.spacing(2)
+      paddingBottom: theme.spacing()
     }
   }),
   {
@@ -62,6 +66,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
     marketCapUsd,
     name,
     priceUsd,
+    rank,
     supply,
     symbol,
     volumeUsd24Hr,
@@ -73,44 +78,74 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
   return (
     <div className={classes.wrapper}>
       <Container className={classes.container}>
-        <summary className={classes.information}>
-          <section>
-            <Typography variant="h3" className={classes.firstRow}>
-              {name} ({symbol})
-            </Typography>
-            <Typography variant="h5">{Format.currency(price)}</Typography>
-          </section>
-          <section>
-            <div className={classes.firstRow}>
-              <Typography variant="button">Market Cap</Typography>
-              <Typography variant="h5">
-                {Format.bigNumber(marketCapUsd)}
-              </Typography>
-            </div>
-            <Link href={website} color="inherit" target="_blank">
-              <Button color="inherit" variant="outlined">
-                Website
+        <Grid container>
+          <Grid className={classes.information} spacing={2} container>
+            <Grid item>
+              <Button
+                startIcon={<StarIcon />}
+                color="primary"
+                variant="contained"
+                disableElevation
+              >
+                Rank {rank}
               </Button>
-            </Link>
-          </section>
-          <section>
-            <div className={classes.firstRow}>
-              <Typography variant="button">Volume (24h)</Typography>
-              <Typography variant="h5">
-                {Format.bigNumber(volumeUsd24Hr)}
+            </Grid>
+            <Grid item>
+              <Link href={explorer} color="inherit" target="_blank">
+                <Button color="primary" variant="contained" disableElevation>
+                  Explorer
+                </Button>
+              </Link>
+            </Grid>
+            <Grid item>
+              <Link href={website} color="inherit" target="_blank">
+                <Button color="primary" variant="contained" disableElevation>
+                  Website
+                </Button>
+              </Link>
+            </Grid>
+          </Grid>
+          <Grid spacing={2} container>
+            <Grid xs={12} sm={3} item>
+              <Typography variant="h5" className={classes.firstRow}>
+                {name} ({symbol})
               </Typography>
-            </div>
-            <Link href={explorer} color="inherit" target="_blank">
-              <Button color="inherit" variant="outlined">
-                Explorer
-              </Button>
-            </Link>
-          </section>
-          <section>
-            <Typography variant="button">Supply</Typography>
-            <Typography variant="h5">{Format.bigNumber(supply)}</Typography>
-          </section>
-        </summary>
+              <Typography variant="h5">
+                <Box fontWeight="fontWeightBold">{Format.currency(price)}</Box>
+              </Typography>
+            </Grid>
+            <Grid xs={12} sm={3} item>
+              <Typography variant="h5" className={classes.firstRow}>
+                Market Cap
+              </Typography>
+              <Typography variant="h5">
+                <Box fontWeight="fontWeightBold">
+                  {Format.bigNumber(marketCapUsd)}
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid xs={12} sm={3} item>
+              <Typography variant="h5" className={classes.firstRow}>
+                Volume (24h)
+              </Typography>
+              <Typography variant="h5">
+                <Box fontWeight="fontWeightBold">
+                  {Format.bigNumber(volumeUsd24Hr)}
+                </Box>
+              </Typography>
+            </Grid>
+            <Grid xs={12} sm={3} item>
+              <Typography variant="h5" className={classes.firstRow}>
+                Supply
+              </Typography>
+              <Typography variant="h5">
+                <Box fontWeight="fontWeightBold">
+                  {Format.bigNumber(supply)}
+                </Box>
+              </Typography>
+            </Grid>
+          </Grid>
+        </Grid>
       </Container>
     </div>
   )
