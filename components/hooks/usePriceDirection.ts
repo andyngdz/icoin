@@ -7,8 +7,7 @@ import { useState, useEffect } from 'react'
 const usePriceDirection = (id: string, initPrice: number) => {
   const [direction, setDirection] = useState(PriceDirection.VOID)
   const [price, setPrice] = useState(initPrice)
-  const prices = useSelector((store: IRootStore) => store.prices.data)
-  const livePrice = prices[id]
+  const livePrice = useSelector((store: IRootStore) => store.prices.data[id])
 
   useEffect(() => {
     if (livePrice && livePrice !== price) {

@@ -6,13 +6,13 @@ import {
   makeStyles
 } from '@material-ui/core'
 import { Format } from 'services'
-import { IAssetSummary } from 'types'
+import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { useQuery, COIN_INFORMATION } from 'apollo'
 import { usePriceDirection } from 'components'
+import { useQuery, COIN_INFORMATION } from 'apollo'
 
-interface IAssetSummaryProps {
-  id: string
+interface IAssetSummaryContent extends ICommonRoutePrams {
+  summary: IAssetSummary
 }
 
 const useStyles = makeStyles(
@@ -42,17 +42,22 @@ const useStyles = makeStyles(
   }
 )
 
-const AssetSummary: React.FC<IAssetSummaryProps> = ({ id }) => {
+const AssetSummary: React.FC<ICommonRoutePrams> = ({ id }) => {
   const { data } = useQuery<IAssetSummary>(COIN_INFORMATION, {
     variables: { id }
   })
 
-  return Render.ensure(summary => <AssetSummaryContent {...summary} />, data)
+  return Render.ensure(
+    summary => <AssetSummaryContent id={id} summary={summary} />,
+    data
+  )
 }
 
-const AssetSummaryContent: React.FC<IAssetSummary> = ({ asset }) => {
+const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
+  id,
+  summary
+}) => {
   const {
-    id,
     explorer,
     marketCapUsd,
     name,
@@ -61,7 +66,7 @@ const AssetSummaryContent: React.FC<IAssetSummary> = ({ asset }) => {
     symbol,
     volumeUsd24Hr,
     website
-  } = asset
+  } = summary.asset
   const classes = useStyles()
   const { price } = usePriceDirection(id, priceUsd)
 
