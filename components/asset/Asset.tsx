@@ -10,7 +10,7 @@ const Asset: React.FC = () => {
     return (
       <>
         <AssetSummary id={id} />
-        <AssetChart />
+        <AssetChart id={id} />
       </>
     )
   }

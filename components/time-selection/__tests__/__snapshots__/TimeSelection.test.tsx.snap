@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`IntervalSelection Should render it correctly 1`] = `
+exports[`TimeSelection Should render it correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>

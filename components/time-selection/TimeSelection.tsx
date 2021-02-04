@@ -1,22 +1,22 @@
 import { Chip, Grid } from '@material-ui/core'
-import { INTERVAL } from 'data'
-import { IUseInterval } from 'types'
+import { TIME } from 'data'
+import { ITime } from 'types'
 
-const IntervalSelection: React.FC<IUseInterval> = ({
-  interval,
-  onIntervalChange
+const TimeSelection: React.FC<ITime> = ({
+  time,
+  onTimeChange
 }): React.ReactElement => {
   return (
     <Grid spacing={1} container>
-      {INTERVAL.map(value => {
-        const isSelected = value === interval
+      {TIME.map(value => {
+        const isSelected = value === time
 
         return (
           <Grid key={value} item>
             <Chip
               color={isSelected ? 'secondary' : 'default'}
               variant="outlined"
-              onClick={() => onIntervalChange(value)}
+              onClick={() => onTimeChange(value)}
               label={value}
               key={value}
               clickable
@@ -28,4 +28,4 @@ const IntervalSelection: React.FC<IUseInterval> = ({
   )
 }
 
-export { IntervalSelection }
+export { TimeSelection }

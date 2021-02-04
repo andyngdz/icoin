@@ -1,10 +1,10 @@
 import { customRender } from 'services/test-utils'
-import { IntervalSelection } from 'components'
+import { TimeSelection } from 'components'
 
-describe('IntervalSelection', () => {
+describe('TimeSelection', () => {
   it('Should render it correctly', async () => {
     const renderResult = customRender(
-      <IntervalSelection interval="1D" onIntervalChange={jest.fn()} />
+      <TimeSelection time="1D" onTimeChange={jest.fn()} />
     )
     expect(renderResult).toMatchSnapshot()
   })
