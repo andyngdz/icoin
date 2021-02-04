@@ -1,2 +1,3 @@
 export * from './useLivePrices'
-export * from './usePriceDirection'
+export * from './useInterval'
+export * from './useLivePrice'

@@ -1,16 +1,37 @@
-import { ButtonGroup, Button } from '@material-ui/core'
+import { ChangeEvent } from 'react'
+import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core'
+import { INTERVAL } from 'data'
+import { IUseInterval, TInterval } from 'types'
 
-const IntervalSelection = (): React.ReactElement => {
+const IntervalSelection: React.FC<IUseInterval> = ({
+  interval,
+  onIntervalChange
+}): React.ReactElement => {
+  const onChange = (
+    event: ChangeEvent<{ name?: string; value: TInterval }>,
+    _child: TInterval
+  ) => {
+    onIntervalChange(event.target.value)
+  }
+
   return (
-    <ButtonGroup color="primary">
-      <Button>1D</Button>
-      <Button>1W</Button>
-      <Button>1M</Button>
-      <Button>3M</Button>
-      <Button>6M</Button>
-      <Button>1Y</Button>
-      <Button>ALL</Button>
-    </ButtonGroup>
+    <FormControl variant="standard">
+      <InputLabel htmlFor="interval">Interval</InputLabel>
+      <Select
+        value={interval}
+        onChange={onChange}
+        inputProps={{
+          name: 'interval',
+          id: 'interval'
+        }}
+      >
+        {INTERVAL.map(value => (
+          <MenuItem value={value} key={value}>
+            {value}
+          </MenuItem>
+        ))}
+      </Select>
+    </FormControl>
   )
 }
 

@@ -9,7 +9,7 @@ import {
 import { Format, numberFormatter } from 'services'
 import { ICommonRoutePrams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import { usePriceDirection, ContainerWrapper } from 'components'
+import { useLivePrice, ContainerWrapper } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 import StarIcon from '@material-ui/icons/Star'
 
@@ -67,7 +67,7 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
     website
   } = summary.asset
   const classes = useStyles()
-  const { price } = usePriceDirection(id, priceUsd)
+  const { price } = useLivePrice(id, priceUsd)
 
   return (
     <div className={classes.wrapper}>
