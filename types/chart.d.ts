@@ -1,3 +1,9 @@
+export type TTime = '1D' | '1W' | '1M' | '3M' | '6M' | '1Y' | 'ALL'
+
+export type TInterval = 'm5' | 'm30' | 'h2' | 'h6' | 'h12' | 'd1'
+
+export type TOnTimeChange = (time: TTime) => void
+
 export interface ICalculateInterval {
   id: string
 
@@ -14,8 +20,14 @@ export interface ITime {
   time: TTime
 }
 
-export type TTime = '1D' | '1W' | '1M' | '3M' | '6M' | '1Y' | 'ALL'
+export interface IAssetHistory {
+  date: string
 
-export type TInterval = 'm5' | 'm30' | 'h2' | 'h6' | 'h12' | 'd1'
+  priceUsd: number
 
-export type TOnTimeChange = (time: TTime) => void
+  timestamp: number
+}
+
+export interface IAssetHistories {
+  assetHistories: Array<IAssetHistory>
+}
