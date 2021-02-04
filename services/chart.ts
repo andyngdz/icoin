@@ -1,11 +1,22 @@
+/**
+ * Author: Andy D. Ng <itc.anhduy@gmail.com>
+ * Chart.js contains the useful function to manage a Chart
+ */
+
 import { ChartData, TimeScale } from 'chart.js'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
-import { StyleUtils } from 'styles'
+import { Theme } from 'styles'
 import { sub } from 'date-fns'
-import { teal } from '@material-ui/core/colors'
 import { TIME_TO_INTERVAL } from 'data'
 import ChartJS from 'chart.js'
+
+/**
+ * @description
+ * We are using Inter font
+ * Set it here for the ChartJS as well
+ */
+ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
 
 const Chart = {
   /**
@@ -62,6 +73,13 @@ const Chart = {
     }
   },
 
+  /**
+   * @description Create time scale with unit for Line Chart
+   *
+   * @param time The time from the TimeSelection component - (Check TTime in chart.d.ts)
+   *
+   * @returns `TimeScale`
+   */
   createTimeScale: (time: TTime): TimeScale => {
     const timeScale: TimeScale = {}
 
@@ -105,12 +123,12 @@ const Chart = {
     assetHistories: IAssetHistory[]
   ): ChartJS => {
     const ctx = canvas.getContext('2d')
-    const chartData = Chart.chartData(assetHistories)
+    const chartData = Chart.createChartData(assetHistories)
     const chartDataStyling = merge(chartData, {
       datasets: [
         {
-          backgroundColor: StyleUtils.createLinearGradient(canvas),
-          borderColor: teal[700],
+          backgroundColor: Theme.palette.primary.light,
+          borderColor: Theme.palette.primary.main,
           borderJoinStyle: 'round',
           borderCapStyle: 'round',
           borderWidth: 3,
@@ -170,7 +188,7 @@ const Chart = {
    *
    * @returns `ChartData`
    */
-  chartData: (assetHistories: Array<IAssetHistory>): ChartData => {
+  createChartData: (assetHistories: Array<IAssetHistory>): ChartData => {
     const data = assetHistories.map(({ timestamp, priceUsd }) => ({
       t: timestamp,
       y: priceUsd
