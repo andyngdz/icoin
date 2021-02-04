@@ -4,6 +4,8 @@ import { useInterval } from 'components'
 const AssetChart = (): React.ReactElement => {
   const { interval, onIntervalChange } = useInterval()
 
+  console.info(interval)
+
   return (
     <ContainerWrapper>
       <IntervalSelection

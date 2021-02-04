@@ -1,37 +1,30 @@
-import { ChangeEvent } from 'react'
-import { FormControl, InputLabel, MenuItem, Select } from '@material-ui/core'
+import { Chip, Grid } from '@material-ui/core'
 import { INTERVAL } from 'data'
-import { IUseInterval, TInterval } from 'types'
+import { IUseInterval } from 'types'
 
 const IntervalSelection: React.FC<IUseInterval> = ({
   interval,
   onIntervalChange
 }): React.ReactElement => {
-  const onChange = (
-    event: ChangeEvent<{ name?: string; value: TInterval }>,
-    _child: TInterval
-  ) => {
-    onIntervalChange(event.target.value)
-  }
-
   return (
-    <FormControl variant="standard">
-      <InputLabel htmlFor="interval">Interval</InputLabel>
-      <Select
-        value={interval}
-        onChange={onChange}
-        inputProps={{
-          name: 'interval',
-          id: 'interval'
-        }}
-      >
-        {INTERVAL.map(value => (
-          <MenuItem value={value} key={value}>
-            {value}
-          </MenuItem>
-        ))}
-      </Select>
-    </FormControl>
+    <Grid spacing={1} container>
+      {INTERVAL.map(value => {
+        const isSelected = value === interval
+
+        return (
+          <Grid key={value} item>
+            <Chip
+              color={isSelected ? 'secondary' : 'default'}
+              variant="outlined"
+              onClick={() => onIntervalChange(value)}
+              label={value}
+              key={value}
+              clickable
+            />
+          </Grid>
+        )
+      })}
+    </Grid>
   )
 }
 
