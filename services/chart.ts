@@ -40,36 +40,36 @@ const Chart = {
    *```
    */
   calculateInterval: (id: string, time: TTime): ICalculateInterval => {
-    let start: number
+    let subtractDate: Date
     const end = Date.now()
 
     switch (time) {
       case '1D':
-        start = sub(end, { days: 1 }).valueOf()
+        subtractDate = sub(end, { days: 1 })
         break
       case '1W':
-        start = sub(end, { weeks: 1 }).valueOf()
+        subtractDate = sub(end, { weeks: 1 })
         break
       case '1M':
-        start = sub(end, { months: 1 }).valueOf()
+        subtractDate = sub(end, { months: 1 })
         break
       case '3M':
-        start = sub(end, { months: 3 }).valueOf()
+        subtractDate = sub(end, { months: 3 })
         break
       case '6M':
-        start = sub(end, { months: 6 }).valueOf()
+        subtractDate = sub(end, { months: 6 })
         break
       case '1Y':
       case 'ALL':
-        start = sub(end, { years: 1 }).valueOf()
+        subtractDate = sub(end, { years: 1 })
         break
     }
 
     return {
+      end,
       id,
       interval: TIME_TO_INTERVAL[time],
-      start,
-      end
+      start: subtractDate.valueOf()
     }
   },
 
@@ -91,14 +91,10 @@ const Chart = {
         timeScale.unit = 'day'
         break
       case '1M':
-        timeScale.unit = 'week'
-        break
       case '3M':
         timeScale.unit = 'week'
         break
       case '6M':
-        timeScale.unit = 'month'
-        break
       case '1Y':
       case 'ALL':
         timeScale.unit = 'month'
@@ -131,10 +127,10 @@ const Chart = {
           borderColor: Theme.palette.primary.main,
           borderJoinStyle: 'round',
           borderCapStyle: 'round',
-          borderWidth: 3,
+          borderWidth: 4,
           pointRadius: 0,
-          pointHitRadius: 10,
-          lineTension: 0.2
+          pointHitRadius: 8,
+          lineTension: 0.4
         }
       ]
     })
