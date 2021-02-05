@@ -7,13 +7,17 @@ Object {
     <div>
       <div
         class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
-      />
+      >
+        Hello, World!
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
       class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
-    />
+    >
+      Hello, World!
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

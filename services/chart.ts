@@ -4,10 +4,11 @@
  */
 
 import { ChartData, TimeScale } from 'chart.js'
+import { fade } from '@material-ui/core'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
-import { Theme } from 'styles'
 import { sub } from 'date-fns'
+import { Theme } from 'styles'
 import { TIME_TO_INTERVAL } from 'data'
 import ChartJS from 'chart.js'
 
@@ -123,7 +124,7 @@ const Chart = {
     const chartDataStyling = merge(chartData, {
       datasets: [
         {
-          backgroundColor: Theme.palette.primary.light,
+          backgroundColor: fade(Theme.palette.primary.main, 0.5),
           borderColor: Theme.palette.primary.main,
           borderJoinStyle: 'round',
           borderCapStyle: 'round',
@@ -160,7 +161,7 @@ const Chart = {
               type: 'time',
               time: Chart.createTimeScale(time),
               gridLines: {
-                drawBorder: false
+                display: false
               }
             }
           ],
