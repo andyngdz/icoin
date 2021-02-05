@@ -3,7 +3,7 @@
  * Chart.js contains the useful function to manage a Chart
  */
 
-import { ChartData, TimeScale } from 'chart.js'
+import { ChartData, ChartOptions, TimeScale } from 'chart.js'
 import { fade } from '@material-ui/core'
 import { IAssetHistory, ICalculateInterval, TTime } from 'types'
 import { merge } from 'lodash'
@@ -112,12 +112,15 @@ const Chart = {
    *
    * @param assetHistories Contains the list history data such as: timestamp, priceUsd, etc...
    *
+   * @param options The chart options, it will be merged with the default options
+   *
    * @returns `ChartJS`
    */
   createNewChart: (
     canvas: HTMLCanvasElement,
     time: TTime,
-    assetHistories: IAssetHistory[]
+    assetHistories: IAssetHistory[],
+    options?: ChartOptions
   ): ChartJS => {
     const ctx = canvas.getContext('2d')
     const chartData = Chart.createChartData(assetHistories)
@@ -139,42 +142,45 @@ const Chart = {
     return new ChartJS(ctx, {
       type: 'line',
       data: chartDataStyling,
-      options: {
-        tooltips: {
-          position: 'nearest',
-          displayColors: false
-        },
-        layout: {
-          padding: {
-            left: 0,
-            right: 0,
-            top: 0,
-            bottom: 0
+      options: merge(
+        {
+          tooltips: {
+            position: 'nearest',
+            displayColors: false
+          },
+          layout: {
+            padding: {
+              left: 0,
+              right: 0,
+              top: 0,
+              bottom: 0
+            }
+          },
+          legend: {
+            display: false
+          },
+          scales: {
+            xAxes: [
+              {
+                type: 'time',
+                time: Chart.createTimeScale(time),
+                gridLines: {
+                  display: false
+                }
+              }
+            ],
+            yAxes: [
+              {
+                position: 'right',
+                gridLines: {
+                  drawBorder: false
+                }
+              }
+            ]
           }
         },
-        legend: {
-          display: false
-        },
-        scales: {
-          xAxes: [
-            {
-              type: 'time',
-              time: Chart.createTimeScale(time),
-              gridLines: {
-                display: false
-              }
-            }
-          ],
-          yAxes: [
-            {
-              position: 'right',
-              gridLines: {
-                drawBorder: false
-              }
-            }
-          ]
-        }
-      }
+        options
+      )
     })
   },
 
