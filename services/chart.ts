@@ -15,7 +15,7 @@ import ChartJS from 'chart.js'
  * We are using Roboto font and
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'DM+Sans', sans-serif"
 
 const Chart = {
   /**
