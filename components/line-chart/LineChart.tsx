@@ -43,10 +43,14 @@ const LineChart: React.FC<ILineChart> = ({
    */
   const renderChart = () => {
     const { assetHistories } = data
-    const chartData: ChartData = merge(
-      Chart.createChartData(assetHistories),
-      chartDataSets
-    )
+    /**
+     * @description Create chart data with default styling
+     */
+    const chartData: ChartData = Chart.createChartData(assetHistories)
+    /**
+     * @description Merge the default styling with custom styling
+     */
+    merge(chartData.datasets, chartDataSets)
 
     lineChart = Chart.createNewChart(canvasRef.current, time, chartData, {
       tooltips: {
