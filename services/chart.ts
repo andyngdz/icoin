@@ -12,10 +12,10 @@ import ChartJS from 'chart.js'
 
 /**
  * @description
- * We are using Roboto font and
+ * We are using Inter font and
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Poppins', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Inter', sans-serif"
 
 const Chart = {
   /**
