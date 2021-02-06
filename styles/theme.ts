@@ -24,6 +24,10 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
         MuiLink: {
           underline: 'none'
         }
+      },
+
+      typography: {
+        fontFamily: "'Poppins', sans-serif;"
       }
     })
   )

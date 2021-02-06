@@ -14,7 +14,7 @@ const API: IAPI = {
 
   getAssets: (
     params = {
-      limit: 30
+      limit: 100
     }
   ) =>
     CoinCapAPI.get('/assets', {

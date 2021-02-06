@@ -31,11 +31,11 @@ Object {
                 class="AssetNameAndDescription-name-4"
               >
                 <div>
-                  <h6
-                    class="MuiTypography-root MuiTypography-h6"
+                  <p
+                    class="MuiTypography-root MuiTypography-button"
                   >
                     Bitcoin
-                  </h6>
+                  </p>
                   <span
                     class="MuiTypography-root MuiTypography-caption"
                   >
@@ -121,11 +121,11 @@ Object {
               class="AssetNameAndDescription-name-4"
             >
               <div>
-                <h6
-                  class="MuiTypography-root MuiTypography-h6"
+                <p
+                  class="MuiTypography-root MuiTypography-button"
                 >
                   Bitcoin
-                </h6>
+                </p>
                 <span
                   class="MuiTypography-root MuiTypography-caption"
                 >
