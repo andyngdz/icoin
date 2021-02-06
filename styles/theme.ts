@@ -23,11 +23,15 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
       props: {
         MuiLink: {
           underline: 'none'
+        },
+
+        MuiPaper: {
+          elevation: 3
         }
       },
 
       typography: {
-        fontFamily: "'Inter', sans-serif;"
+        fontFamily: "'Roboto', sans-serif;"
       }
     })
   )

@@ -1,9 +1,6 @@
-import { useState } from 'react'
 import { TOnPageChange } from 'types'
 
 interface IUsePagination {
-  rowsPerPage: number
-
   count: number
 
   page: number
@@ -12,8 +9,7 @@ interface IUsePagination {
 }
 
 const usePagination = (): IUsePagination => {
-  const [rowsPerPage] = useState(100)
-  const count = 6000
+  const count = 100
   const page = 1
 
   const onChangePage = (
@@ -23,7 +19,7 @@ const usePagination = (): IUsePagination => {
     console.info(page)
   }
 
-  return { rowsPerPage, count, page, onChangePage }
+  return { count, page, onChangePage }
 }
 
 export { usePagination }

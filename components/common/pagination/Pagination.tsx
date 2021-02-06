@@ -1,4 +1,4 @@
-import { TablePagination } from '@material-ui/core'
+import { Pagination as PaginationCore } from '@material-ui/lab'
 import { TOnPageChange } from 'types'
 
 interface IPaginationProps {
@@ -6,25 +6,20 @@ interface IPaginationProps {
 
   page: number
 
-  rowsPerPage?: number
-
   onChangePage: TOnPageChange
 }
 
 const Pagination: React.FC<IPaginationProps> = ({
   count,
   page,
-  onChangePage,
-  rowsPerPage = 100
+  onChangePage
 }): React.ReactElement => {
   return (
-    <TablePagination
-      component="div"
+    <PaginationCore
       count={count}
-      onChangePage={onChangePage}
       page={page}
-      rowsPerPage={rowsPerPage}
-      rowsPerPageOptions={[25, 50, 75, 100, { label: 'All', value: -1 }]}
+      onChange={onChangePage}
+      variant="outlined"
     />
   )
 }
