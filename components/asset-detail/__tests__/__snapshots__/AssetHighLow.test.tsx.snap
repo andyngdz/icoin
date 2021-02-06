@@ -32,11 +32,11 @@ Object {
               <p
                 class="MuiTypography-root MuiTypography-body1"
               >
-                <div
+                <span
                   class="MuiBox-root MuiBox-root-3"
                 >
                   $33,782.08
-                </div>
+                </span>
               </p>
             </div>
             <div
@@ -54,11 +54,11 @@ Object {
               <p
                 class="MuiTypography-root MuiTypography-body1"
               >
-                <div
+                <span
                   class="MuiBox-root MuiBox-root-5"
                 >
                   $33,459.09
-                </div>
+                </span>
               </p>
             </div>
             <div
@@ -76,11 +76,11 @@ Object {
               <p
                 class="MuiTypography-root MuiTypography-body1"
               >
-                <div
+                <span
                   class="MuiBox-root MuiBox-root-7"
                 >
                   $33,620.58
-                </div>
+                </span>
               </p>
             </div>
             <div
@@ -98,15 +98,15 @@ Object {
               <p
                 class="MuiTypography-root MuiTypography-body1"
               >
-                <p
+                <span
                   class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
                 >
-                  <div
+                  <span
                     class="MuiBox-root MuiBox-root-11"
                   >
                     4.95%
-                  </div>
-                </p>
+                  </span>
+                </span>
               </p>
             </div>
           </div>
@@ -142,11 +142,11 @@ Object {
             <p
               class="MuiTypography-root MuiTypography-body1"
             >
-              <div
+              <span
                 class="MuiBox-root MuiBox-root-3"
               >
                 $33,782.08
-              </div>
+              </span>
             </p>
           </div>
           <div
@@ -164,11 +164,11 @@ Object {
             <p
               class="MuiTypography-root MuiTypography-body1"
             >
-              <div
+              <span
                 class="MuiBox-root MuiBox-root-5"
               >
                 $33,459.09
-              </div>
+              </span>
             </p>
           </div>
           <div
@@ -186,11 +186,11 @@ Object {
             <p
               class="MuiTypography-root MuiTypography-body1"
             >
-              <div
+              <span
                 class="MuiBox-root MuiBox-root-7"
               >
                 $33,620.58
-              </div>
+              </span>
             </p>
           </div>
           <div
@@ -208,15 +208,15 @@ Object {
             <p
               class="MuiTypography-root MuiTypography-body1"
             >
-              <p
+              <span
                 class="MuiTypography-root ValueColor-up-9 MuiTypography-body1"
               >
-                <div
+                <span
                   class="MuiBox-root MuiBox-root-11"
                 >
                   4.95%
-                </div>
-              </p>
+                </span>
+              </span>
             </p>
           </div>
         </div>

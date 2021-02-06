@@ -11,13 +11,11 @@ const COIN_CHART = gql`
       priceUsd
       timestamp
       date
-      __typename
     }
     asset(id: $id) {
       changePercent24Hr
       name
       symbol
-      __typename
     }
   }
 `
