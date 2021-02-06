@@ -7,12 +7,18 @@ import {
   TableHead,
   TableRow
 } from '@material-ui/core'
-import { AssetItem, ContainerWrapper } from 'components'
+import {
+  AssetItem,
+  ContainerWrapper,
+  Pagination,
+  usePagination
+} from 'components'
 import { useAsync } from 'react-use'
 import { API } from 'services'
 
 const Assets = (): React.ReactElement => {
   const { loading, value } = useAsync(API.getAssets)
+  const { rowsPerPage, count, page, onChangePage } = usePagination()
 
   if (!loading) {
     const { data } = value.data
@@ -38,6 +44,12 @@ const Assets = (): React.ReactElement => {
               ))}
             </TableBody>
           </Table>
+          <Pagination
+            rowsPerPage={rowsPerPage}
+            count={count}
+            page={page}
+            onChangePage={onChangePage}
+          />
         </TableContainer>
       </ContainerWrapper>
     )

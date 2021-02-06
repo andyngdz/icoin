@@ -227,6 +227,112 @@ Object {
               </tr>
             </tbody>
           </table>
+          <div
+            class="MuiTablePagination-root"
+          >
+            <div
+              class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"
+            >
+              <div
+                class="MuiTablePagination-spacer"
+              />
+              <p
+                class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
+                id="mui-94529"
+              >
+                Rows per page:
+              </p>
+              <div
+                class="MuiInputBase-root MuiTablePagination-input MuiTablePagination-selectRoot"
+              >
+                <div
+                  aria-haspopup="listbox"
+                  aria-labelledby="mui-94529 mui-74436"
+                  class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
+                  id="mui-74436"
+                  role="button"
+                  tabindex="0"
+                >
+                  100
+                </div>
+                <input
+                  aria-hidden="true"
+                  class="MuiSelect-nativeInput"
+                  tabindex="-1"
+                  value="100"
+                />
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M7 10l5 5 5-5z"
+                  />
+                </svg>
+              </div>
+              <p
+                class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
+              >
+                101-200 of 6000
+              </p>
+              <div
+                class="MuiTablePagination-actions"
+              >
+                <button
+                  aria-label="Previous page"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+                  tabindex="0"
+                  title="Previous page"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+                <button
+                  aria-label="Next page"
+                  class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+                  tabindex="0"
+                  title="Next page"
+                  type="button"
+                >
+                  <span
+                    class="MuiIconButton-label"
+                  >
+                    <svg
+                      aria-hidden="true"
+                      class="MuiSvgIcon-root"
+                      focusable="false"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -454,6 +560,112 @@ Object {
             </tr>
           </tbody>
         </table>
+        <div
+          class="MuiTablePagination-root"
+        >
+          <div
+            class="MuiToolbar-root MuiToolbar-regular MuiTablePagination-toolbar MuiToolbar-gutters"
+          >
+            <div
+              class="MuiTablePagination-spacer"
+            />
+            <p
+              class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
+              id="mui-94529"
+            >
+              Rows per page:
+            </p>
+            <div
+              class="MuiInputBase-root MuiTablePagination-input MuiTablePagination-selectRoot"
+            >
+              <div
+                aria-haspopup="listbox"
+                aria-labelledby="mui-94529 mui-74436"
+                class="MuiSelect-root MuiSelect-select MuiTablePagination-select MuiSelect-selectMenu MuiInputBase-input"
+                id="mui-74436"
+                role="button"
+                tabindex="0"
+              >
+                100
+              </div>
+              <input
+                aria-hidden="true"
+                class="MuiSelect-nativeInput"
+                tabindex="-1"
+                value="100"
+              />
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiSelect-icon MuiTablePagination-selectIcon"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M7 10l5 5 5-5z"
+                />
+              </svg>
+            </div>
+            <p
+              class="MuiTypography-root MuiTablePagination-caption MuiTypography-body2 MuiTypography-colorInherit"
+            >
+              101-200 of 6000
+            </p>
+            <div
+              class="MuiTablePagination-actions"
+            >
+              <button
+                aria-label="Previous page"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+                tabindex="0"
+                title="Previous page"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M15.41 16.09l-4.58-4.59 4.58-4.59L14 5.5l-6 6 6 6z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+              <button
+                aria-label="Next page"
+                class="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
+                tabindex="0"
+                title="Next page"
+                type="button"
+              >
+                <span
+                  class="MuiIconButton-label"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M8.59 16.34l4.58-4.59-4.58-4.59L10 5.75l6 6-6 6z"
+                    />
+                  </svg>
+                </span>
+                <span
+                  class="MuiTouchRipple-root"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>,
