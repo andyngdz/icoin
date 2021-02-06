@@ -48,12 +48,6 @@ Object {
                   class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                   scope="col"
                 >
-                  Circularing Supply
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
                   Volume
                 </th>
                 <th
@@ -61,6 +55,12 @@ Object {
                   scope="col"
                 >
                   Change (24h)
+                </th>
+                <th
+                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                  scope="col"
+                >
+                  Circularing Supply
                 </th>
               </tr>
             </thead>
@@ -106,7 +106,7 @@ Object {
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    $647.16b
+                    $647,158,791,754
                   </h6>
                 </td>
                 <td
@@ -124,16 +124,7 @@ Object {
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    18,617,050
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $14.57b
+                    $14,567,120,537
                   </h6>
                 </td>
                 <td
@@ -144,6 +135,15 @@ Object {
                   >
                     3.15%
                   </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle2"
+                  >
+                    18,617,050
+                  </h6>
                 </td>
               </tr>
               <tr
@@ -185,7 +185,7 @@ Object {
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    $163.02b
+                    $163,024,735,364
                   </h6>
                 </td>
                 <td
@@ -203,16 +203,7 @@ Object {
                   <h6
                     class="MuiTypography-root MuiTypography-subtitle2"
                   >
-                    114,503,686.687
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $10.51b
+                    $10,514,268,643
                   </h6>
                 </td>
                 <td
@@ -223,6 +214,15 @@ Object {
                   >
                     7.16%
                   </span>
+                </td>
+                <td
+                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+                >
+                  <h6
+                    class="MuiTypography-root MuiTypography-subtitle2"
+                  >
+                    114,503,686.687
+                  </h6>
                 </td>
               </tr>
             </tbody>
@@ -275,12 +275,6 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Circularing Supply
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
                 Volume
               </th>
               <th
@@ -288,6 +282,12 @@ Object {
                 scope="col"
               >
                 Change (24h)
+              </th>
+              <th
+                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+                scope="col"
+              >
+                Circularing Supply
               </th>
             </tr>
           </thead>
@@ -333,7 +333,7 @@ Object {
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  $647.16b
+                  $647,158,791,754
                 </h6>
               </td>
               <td
@@ -351,16 +351,7 @@ Object {
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  18,617,050
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $14.57b
+                  $14,567,120,537
                 </h6>
               </td>
               <td
@@ -371,6 +362,15 @@ Object {
                 >
                   3.15%
                 </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2"
+                >
+                  18,617,050
+                </h6>
               </td>
             </tr>
             <tr
@@ -412,7 +412,7 @@ Object {
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  $163.02b
+                  $163,024,735,364
                 </h6>
               </td>
               <td
@@ -430,16 +430,7 @@ Object {
                 <h6
                   class="MuiTypography-root MuiTypography-subtitle2"
                 >
-                  114,503,686.687
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $10.51b
+                  $10,514,268,643
                 </h6>
               </td>
               <td
@@ -450,6 +441,15 @@ Object {
                 >
                   7.16%
                 </span>
+              </td>
+              <td
+                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
+              >
+                <h6
+                  class="MuiTypography-root MuiTypography-subtitle2"
+                >
+                  114,503,686.687
+                </h6>
               </td>
             </tr>
           </tbody>

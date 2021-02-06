@@ -27,9 +27,9 @@ const Assets = (): React.ReactElement => {
                 <TableCell>Name and Description</TableCell>
                 <TableCell align="right">Market Cap</TableCell>
                 <TableCell align="right">Price</TableCell>
-                <TableCell align="right">Circularing Supply</TableCell>
                 <TableCell align="right">Volume</TableCell>
                 <TableCell align="right">Change (24h)</TableCell>
+                <TableCell align="right">Circularing Supply</TableCell>
               </TableRow>
             </TableHead>
             <TableBody>
