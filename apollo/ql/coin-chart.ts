@@ -13,6 +13,12 @@ const COIN_CHART = gql`
       date
       __typename
     }
+    asset(id: $id) {
+      changePercent24Hr
+      name
+      symbol
+      __typename
+    }
   }
 `
 
