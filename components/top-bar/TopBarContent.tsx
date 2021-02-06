@@ -1,10 +1,9 @@
-import { AxiosResponse } from 'axios'
 import { Format } from 'services'
-import { IGlobal } from 'types/global'
+import { IGlobalData } from 'types/global'
 import { makeStyles, Typography } from '@material-ui/core'
 
 interface ITopBarContentProps {
-  value: AxiosResponse<IGlobal>
+  data: IGlobalData
 }
 
 const useStyles = makeStyles(
@@ -26,9 +25,8 @@ const useStyles = makeStyles(
   }
 )
 
-const TopBarContent: React.FC<ITopBarContentProps> = ({ value }) => {
+const TopBarContent: React.FC<ITopBarContentProps> = ({ data }) => {
   const classes = useStyles()
-  const { data } = value.data
 
   return (
     <div className={classes.content}>
