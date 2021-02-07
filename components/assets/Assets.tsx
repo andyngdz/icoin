@@ -13,12 +13,36 @@ import {
   Pagination,
   usePagination
 } from 'components'
+import { API, Paginate } from 'services'
+import { PER_PAGE } from 'data'
+import { IRootStore, IGlobalData } from 'types'
 import { useAsync } from 'react-use'
-import { API } from 'services'
+import { useSelector } from 'react-redux'
+
+type IAssetsTableProps = Pick<IGlobalData, 'active_cryptocurrencies'>
 
 const Assets = (): React.ReactElement => {
-  const { loading, value } = useAsync(API.getAssets)
-  const { count, page, onChangePage } = usePagination()
+  const { data } = useSelector((store: IRootStore) => store.globals)
+
+  if (data) {
+    return (
+      <AssetsTable active_cryptocurrencies={data.active_cryptocurrencies} />
+    )
+  }
+
+  return <></>
+}
+
+const AssetsTable: React.FC<IAssetsTableProps> = ({
+  active_cryptocurrencies
+}): React.ReactElement => {
+  const { page, onChangePage } = usePagination()
+  const { loading, value } = useAsync(() =>
+    API.getAssets({
+      offset: Paginate.offset(page, PER_PAGE),
+      limit: PER_PAGE
+    })
+  )
 
   if (!loading) {
     const { data } = value.data
@@ -44,7 +68,11 @@ const Assets = (): React.ReactElement => {
               ))}
             </TableBody>
           </Table>
-          <Pagination count={count} page={page} onChangePage={onChangePage} />
+          <Pagination
+            page={page}
+            count={Paginate.count(active_cryptocurrencies, PER_PAGE)}
+            onChangePage={onChangePage}
+          />
         </TableContainer>
       </ContainerWrapper>
     )
@@ -53,4 +81,4 @@ const Assets = (): React.ReactElement => {
   return <></>
 }
 
-export { Assets }
+export { Assets, AssetsTable }

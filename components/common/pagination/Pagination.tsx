@@ -1,11 +1,9 @@
 import { Toolbar, makeStyles } from '@material-ui/core'
 import { Pagination as PaginationCore } from '@material-ui/lab'
-import { TOnPageChange } from 'types'
+import { TOnPageChange, IPagination } from 'types'
 
-interface IPaginationProps {
+interface IPaginationProps extends IPagination {
   count: number
-
-  page: number
 
   onChangePage: TOnPageChange
 }

@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Assets Should render it correctly 1`] = `
+exports[`Assets Should render assets table correctly 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
@@ -332,12 +332,12 @@ Object {
                 </li>
                 <li>
                   <button
-                    aria-label="Go to page 100"
+                    aria-label="Go to page 120"
                     class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                     tabindex="0"
                     type="button"
                   >
-                    100
+                    120
                     <span
                       class="MuiTouchRipple-root"
                     />
@@ -700,12 +700,12 @@ Object {
               </li>
               <li>
                 <button
-                  aria-label="Go to page 100"
+                  aria-label="Go to page 120"
                   class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                   tabindex="0"
                   type="button"
                 >
-                  100
+                  120
                   <span
                     class="MuiTouchRipple-root"
                   />
