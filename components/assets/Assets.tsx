@@ -13,7 +13,7 @@ import {
   Pagination,
   usePagination
 } from 'components'
-import { API, Paginate } from 'services'
+import { API, Paginate, Routes } from 'services'
 import { PER_PAGE } from 'data'
 import { IRootStore, IGlobalData } from 'types'
 import { useAsync } from 'react-use'
@@ -36,12 +36,14 @@ const Assets = (): React.ReactElement => {
 const AssetsTable: React.FC<IAssetsTableProps> = ({
   active_cryptocurrencies
 }): React.ReactElement => {
-  const { page, onChangePage } = usePagination()
-  const { loading, value } = useAsync(() =>
-    API.getAssets({
-      offset: Paginate.offset(page, PER_PAGE),
-      limit: PER_PAGE
-    })
+  const { page, onChangePage } = usePagination(page => Routes.home.concat(page))
+  const { loading, value } = useAsync(
+    () =>
+      API.getAssets({
+        offset: Paginate.offset(page, PER_PAGE),
+        limit: PER_PAGE
+      }),
+    [page]
   )
 
   if (!loading) {

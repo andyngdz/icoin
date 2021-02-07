@@ -3,6 +3,8 @@ export type TOnPageChange = (
   page: number
 ) => void
 
+export type TOnBuildURL = (page: numer) => string
+
 export interface IPagination {
   page: number
 }

@@ -240,9 +240,8 @@ Object {
                 <li>
                   <button
                     aria-label="Go to previous page"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
-                    disabled=""
-                    tabindex="-1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    tabindex="0"
                     type="button"
                   >
                     <svg
@@ -255,13 +254,15 @@ Object {
                         d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
                       />
                     </svg>
+                    <span
+                      class="MuiTouchRipple-root"
+                    />
                   </button>
                 </li>
                 <li>
                   <button
-                    aria-current="true"
-                    aria-label="page 1"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                    aria-label="Go to page 1"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                     tabindex="0"
                     type="button"
                   >
@@ -273,8 +274,9 @@ Object {
                 </li>
                 <li>
                   <button
-                    aria-label="Go to page 2"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                    aria-current="true"
+                    aria-label="page 2"
+                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
                     tabindex="0"
                     type="button"
                   >
@@ -608,9 +610,8 @@ Object {
               <li>
                 <button
                   aria-label="Go to previous page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-disabled Mui-disabled"
-                  disabled=""
-                  tabindex="-1"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  tabindex="0"
                   type="button"
                 >
                   <svg
@@ -623,13 +624,15 @@ Object {
                       d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
                     />
                   </svg>
+                  <span
+                    class="MuiTouchRipple-root"
+                  />
                 </button>
               </li>
               <li>
                 <button
-                  aria-current="true"
-                  aria-label="page 1"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
+                  aria-label="Go to page 1"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
                   tabindex="0"
                   type="button"
                 >
@@ -641,8 +644,9 @@ Object {
               </li>
               <li>
                 <button
-                  aria-label="Go to page 2"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
+                  aria-current="true"
+                  aria-label="page 2"
+                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
                   tabindex="0"
                   type="button"
                 >

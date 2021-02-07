@@ -1,4 +1,5 @@
-import { TOnPageChange } from 'types'
+import { TOnPageChange, TOnBuildURL } from 'types'
+import { useRouter } from 'next/router'
 
 interface IUsePagination {
   page: number
@@ -6,14 +7,15 @@ interface IUsePagination {
   onChangePage: TOnPageChange
 }
 
-const usePagination = (): IUsePagination => {
-  const page = 1
+const usePagination = (onBuildURL: TOnBuildURL): IUsePagination => {
+  const { query, push } = useRouter()
+  const page = Number(query.page) || 1
 
   const onChangePage = (
-    event: React.MouseEvent<HTMLButtonElement>,
+    _: React.MouseEvent<HTMLButtonElement>,
     page: number
   ) => {
-    console.info(page)
+    push(onBuildURL(page))
   }
 
   return { page, onChangePage }
