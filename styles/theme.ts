@@ -1,7 +1,7 @@
 import { createMuiTheme, responsiveFontSizes } from '@material-ui/core'
-import { ICoinShadows, white, gray1 } from 'styles'
+import { ICoinShadows, white, gray1, divider } from 'styles'
 import { Shadows } from '@material-ui/core/styles/shadows'
-import { teal, green } from '@material-ui/core/colors'
+import { blue, green } from '@material-ui/core/colors'
 import { Theme } from '@material-ui/core'
 import { TThemeMode } from 'types'
 
@@ -11,7 +11,7 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
   return responsiveFontSizes(
     createMuiTheme({
       palette: {
-        primary: teal,
+        primary: blue,
         secondary: green,
         text: {
           primary: textPrimary
@@ -27,6 +27,14 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
 
         MuiPaper: {
           elevation: 3
+        }
+      },
+
+      overrides: {
+        MuiTableCell: {
+          root: {
+            borderBottom: `1px solid ${divider}`
+          }
         }
       },
 
