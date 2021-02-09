@@ -25,6 +25,7 @@ const API: IAPI = {
     const { data } = response.data
 
     response.data.data = Format.toNumber(data, [
+      'rank',
       'marketCapUsd',
       'priceUsd',
       'volumeUsd24Hr',

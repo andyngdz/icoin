@@ -18,43 +18,162 @@ Object {
               class="MuiTableCell-root MuiTableCell-head"
               scope="col"
             >
-              #
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                role="button"
+                tabindex="0"
+              >
+                #
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head"
               scope="col"
             >
-              Name and Description
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Name and Description
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Market Cap
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Market Cap
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Price
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Price
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Volume
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Volume
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Change (24h)
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Change (24h)
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Circularing Supply
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Circularing Supply
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
           </tr>
         </thead>
@@ -243,43 +362,162 @@ Object {
             class="MuiTableCell-root MuiTableCell-head"
             scope="col"
           >
-            #
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+              role="button"
+              tabindex="0"
+            >
+              #
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head"
             scope="col"
           >
-            Name and Description
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Name and Description
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
             scope="col"
           >
-            Market Cap
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Market Cap
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
             scope="col"
           >
-            Price
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Price
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
             scope="col"
           >
-            Volume
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Volume
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
             scope="col"
           >
-            Change (24h)
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Change (24h)
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
           <th
             class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
             scope="col"
           >
-            Circularing Supply
+            <span
+              aria-disabled="false"
+              class="MuiButtonBase-root MuiTableSortLabel-root"
+              role="button"
+              tabindex="0"
+            >
+              Circularing Supply
+              <svg
+                aria-hidden="true"
+                class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                />
+              </svg>
+            </span>
           </th>
         </tr>
       </thead>
