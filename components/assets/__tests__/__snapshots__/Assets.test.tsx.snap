@@ -5,755 +5,123 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
+      <table
+        class="MuiTable-root"
       >
-        <div
-          class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation3 MuiPaper-rounded"
+        <thead
+          class="MuiTableHead-root"
         >
-          <table
-            class="MuiTable-root"
+          <tr
+            class="MuiTableRow-root MuiTableRow-head"
           >
-            <thead
-              class="MuiTableHead-root"
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
             >
-              <tr
-                class="MuiTableRow-root MuiTableRow-head"
-              >
-                <th
-                  class="MuiTableCell-root MuiTableCell-head"
-                  scope="col"
-                >
-                  #
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head"
-                  scope="col"
-                >
-                  Name and Description
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Market Cap
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Price
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Volume
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Change (24h)
-                </th>
-                <th
-                  class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                  scope="col"
-                >
-                  Circularing Supply
-                </th>
-              </tr>
-            </thead>
-            <tbody
-              class="MuiTableBody-root"
+              #
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head"
+              scope="col"
             >
-              <tr
-                class="MuiTableRow-root AssetItem-asset-2"
-              >
-                <td
-                  class="MuiTableCell-root MuiTableCell-body"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    1
-                    .
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body"
-                >
-                  <div
-                    class="AssetNameAndDescription-name-5"
-                  >
-                    <div
-                      class="AssetNameAndDescription-symbol-6"
-                    />
-                    <div>
-                      <p
-                        class="MuiTypography-root MuiTypography-button"
-                      >
-                        Bitcoin
-                      </p>
-                      <span
-                        class="MuiTypography-root MuiTypography-caption"
-                      >
-                        BTC
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $647,158,791,754
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $34,761.62
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $14,567,120,537
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <span
-                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
-                  >
-                    3.15%
-                  </span>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    18,617,050
-                  </h6>
-                </td>
-              </tr>
-              <tr
-                class="MuiTableRow-root AssetItem-asset-2"
-              >
-                <td
-                  class="MuiTableCell-root MuiTableCell-body"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    2
-                    .
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body"
-                >
-                  <div
-                    class="AssetNameAndDescription-name-5"
-                  >
-                    <div
-                      class="AssetNameAndDescription-symbol-6"
-                    />
-                    <div>
-                      <p
-                        class="MuiTypography-root MuiTypography-button"
-                      >
-                        Ethereum
-                      </p>
-                      <span
-                        class="MuiTypography-root MuiTypography-caption"
-                      >
-                        ETH
-                      </span>
-                    </div>
-                  </div>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $163,024,735,364
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $1,423.75
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    $10,514,268,643
-                  </h6>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <span
-                    class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
-                  >
-                    7.16%
-                  </span>
-                </td>
-                <td
-                  class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-                >
-                  <h6
-                    class="MuiTypography-root MuiTypography-subtitle2"
-                  >
-                    114,503,686.687
-                  </h6>
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <div
-            class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
-          >
-            <nav
-              aria-label="pagination navigation"
-              class="MuiPagination-root"
+              Name and Description
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
             >
-              <ul
-                class="MuiPagination-ul"
-              >
-                <li>
-                  <button
-                    aria-label="Go to previous page"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiPaginationItem-icon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to page 1"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    1
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-current="true"
-                    aria-label="page 2"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
-                    tabindex="0"
-                    type="button"
-                  >
-                    2
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to page 3"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    3
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to page 4"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    4
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to page 5"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    5
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <div
-                    class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
-                  >
-                    …
-                  </div>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to page 120"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    120
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    aria-label="Go to next page"
-                    class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                    tabindex="0"
-                    type="button"
-                  >
-                    <svg
-                      aria-hidden="true"
-                      class="MuiSvgIcon-root MuiPaginationItem-icon"
-                      focusable="false"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                      />
-                    </svg>
-                    <span
-                      class="MuiTouchRipple-root"
-                    />
-                  </button>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
-      </div>
+              Market Cap
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              Price
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              Volume
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              Change (24h)
+            </th>
+            <th
+              class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+              scope="col"
+            >
+              Circularing Supply
+            </th>
+          </tr>
+        </thead>
+        <tbody
+          class="MuiTableBody-root"
+        />
+      </table>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="MuiContainer-root ContainerWrapper-container-1 MuiContainer-maxWidthLg"
+    <table
+      class="MuiTable-root"
     >
-      <div
-        class="MuiPaper-root MuiTableContainer-root MuiPaper-elevation3 MuiPaper-rounded"
+      <thead
+        class="MuiTableHead-root"
       >
-        <table
-          class="MuiTable-root"
+        <tr
+          class="MuiTableRow-root MuiTableRow-head"
         >
-          <thead
-            class="MuiTableHead-root"
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <tr
-              class="MuiTableRow-root MuiTableRow-head"
-            >
-              <th
-                class="MuiTableCell-root MuiTableCell-head"
-                scope="col"
-              >
-                #
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head"
-                scope="col"
-              >
-                Name and Description
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Market Cap
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Price
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Volume
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Change (24h)
-              </th>
-              <th
-                class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
-                scope="col"
-              >
-                Circularing Supply
-              </th>
-            </tr>
-          </thead>
-          <tbody
-            class="MuiTableBody-root"
+            #
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head"
+            scope="col"
           >
-            <tr
-              class="MuiTableRow-root AssetItem-asset-2"
-            >
-              <td
-                class="MuiTableCell-root MuiTableCell-body"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  1
-                  .
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body"
-              >
-                <div
-                  class="AssetNameAndDescription-name-5"
-                >
-                  <div
-                    class="AssetNameAndDescription-symbol-6"
-                  />
-                  <div>
-                    <p
-                      class="MuiTypography-root MuiTypography-button"
-                    >
-                      Bitcoin
-                    </p>
-                    <span
-                      class="MuiTypography-root MuiTypography-caption"
-                    >
-                      BTC
-                    </span>
-                  </div>
-                </div>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $647,158,791,754
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $34,761.62
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $14,567,120,537
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <span
-                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
-                >
-                  3.15%
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  18,617,050
-                </h6>
-              </td>
-            </tr>
-            <tr
-              class="MuiTableRow-root AssetItem-asset-2"
-            >
-              <td
-                class="MuiTableCell-root MuiTableCell-body"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  2
-                  .
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body"
-              >
-                <div
-                  class="AssetNameAndDescription-name-5"
-                >
-                  <div
-                    class="AssetNameAndDescription-symbol-6"
-                  />
-                  <div>
-                    <p
-                      class="MuiTypography-root MuiTypography-button"
-                    >
-                      Ethereum
-                    </p>
-                    <span
-                      class="MuiTypography-root MuiTypography-caption"
-                    >
-                      ETH
-                    </span>
-                  </div>
-                </div>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $163,024,735,364
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $1,423.75
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  $10,514,268,643
-                </h6>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <span
-                  class="MuiTypography-root ValueColor-up-8 MuiTypography-subtitle2"
-                >
-                  7.16%
-                </span>
-              </td>
-              <td
-                class="MuiTableCell-root MuiTableCell-body MuiTableCell-alignRight"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  114,503,686.687
-                </h6>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <div
-          class="MuiToolbar-root MuiToolbar-regular Pagination-pagiation-10 MuiToolbar-gutters"
-        >
-          <nav
-            aria-label="pagination navigation"
-            class="MuiPagination-root"
+            Name and Description
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
           >
-            <ul
-              class="MuiPagination-ul"
-            >
-              <li>
-                <button
-                  aria-label="Go to previous page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiPaginationItem-icon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
-                    />
-                  </svg>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to page 1"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  1
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-current="true"
-                  aria-label="page 2"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page Mui-selected"
-                  tabindex="0"
-                  type="button"
-                >
-                  2
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to page 3"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  3
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to page 4"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  4
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to page 5"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  5
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <div
-                  class="MuiPaginationItem-root MuiPaginationItem-ellipsis"
-                >
-                  …
-                </div>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to page 120"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  120
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-              <li>
-                <button
-                  aria-label="Go to next page"
-                  class="MuiButtonBase-root MuiPaginationItem-root MuiPaginationItem-page"
-                  tabindex="0"
-                  type="button"
-                >
-                  <svg
-                    aria-hidden="true"
-                    class="MuiSvgIcon-root MuiPaginationItem-icon"
-                    focusable="false"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
-                    />
-                  </svg>
-                  <span
-                    class="MuiTouchRipple-root"
-                  />
-                </button>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </div>
-    </div>
+            Market Cap
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            Price
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            Volume
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            Change (24h)
+          </th>
+          <th
+            class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
+            scope="col"
+          >
+            Circularing Supply
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        class="MuiTableBody-root"
+      />
+    </table>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
