@@ -1,5 +1,5 @@
 import { Chart } from 'services'
-import { IAssetHistory, ICommonRoutePrams } from 'types'
+import { IAssetHistory, ICommonRouteParams } from 'types'
 import { makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
@@ -24,7 +24,7 @@ const useStyles = makeStyles(
   }
 )
 
-const AssetChart: React.FC<ICommonRoutePrams> = ({
+const AssetChart: React.FC<ICommonRouteParams> = ({
   id
 }): React.ReactElement => {
   const classes = useStyles()
