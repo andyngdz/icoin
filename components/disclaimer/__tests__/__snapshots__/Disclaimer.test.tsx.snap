@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="MuiPaper-root Disclaimer-disclaimer-1 PaperWrapper-paper-2 MuiPaper-elevation3"
+        class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3"
       >
         <div
-          class="MuiContainer-root ContainerWrapper-container-3 MuiContainer-maxWidthLg"
+          class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
         >
           <h6
             class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
@@ -27,10 +27,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="MuiPaper-root Disclaimer-disclaimer-1 PaperWrapper-paper-2 MuiPaper-elevation3"
+      class="MuiPaper-root PaperWrapper-paper-1 MuiPaper-elevation3"
     >
       <div
-        class="MuiContainer-root ContainerWrapper-container-3 MuiContainer-maxWidthLg"
+        class="MuiContainer-root ContainerWrapper-container-2 MuiContainer-maxWidthLg"
       >
         <h6
           class="MuiTypography-root MuiTypography-h6 MuiTypography-gutterBottom"
