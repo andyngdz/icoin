@@ -1,7 +1,8 @@
 import { useQuery, EXCHANGE } from 'apollo'
+import { IExchangeParams, IExchangeResponse } from 'types'
 
 const Exchanges: React.FC = () => {
-  useQuery(EXCHANGE, {
+  useQuery<IExchangeResponse, IExchangeParams>(EXCHANGE, {
     variables: {
       direction: 'ASC',
       first: 20,

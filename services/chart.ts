@@ -31,7 +31,7 @@ const Chart = {
    * @example
    * ```
    *    const { time, onTimeChange } = useTime()
-   *     const [getIntervals, { data }] = useLazyQuery<IAssetHistories>(COIN_CHART)
+   *     const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
    *
    *     useEffect(() => {
    *       const interval = Chart.calculateInterval(id, time)

@@ -1,5 +1,5 @@
 import { Chart } from 'services'
-import { IAssetHistories, ICommonRoutePrams } from 'types'
+import { IAssetHistory, ICommonRoutePrams } from 'types'
 import { makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
@@ -29,7 +29,7 @@ const AssetChart: React.FC<ICommonRoutePrams> = ({
 }): React.ReactElement => {
   const classes = useStyles()
   const { time, onTimeChange } = useTime()
-  const [getIntervals, { data }] = useLazyQuery<IAssetHistories>(COIN_CHART)
+  const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
 
   useEffect(() => {
     const interval = Chart.calculateInterval(id, time)
