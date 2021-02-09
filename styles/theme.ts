@@ -39,7 +39,7 @@ const ICoinTheme = (mode: TThemeMode): Theme => {
       },
 
       typography: {
-        fontFamily: "'Open Sans', sans-serif;"
+        fontFamily: "'Roboto', sans-serif;"
       }
     })
   )

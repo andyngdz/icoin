@@ -12,10 +12,10 @@ import ChartJS from 'chart.js'
 
 /**
  * @description
- * We are using Open Sans font
+ * We are using Roboto font
  * Set it here for the ChartJS as well
  */
-ChartJS.defaults.global.defaultFontFamily = "'Open Sans', sans-serif"
+ChartJS.defaults.global.defaultFontFamily = "'Roboto', sans-serif"
 ChartJS.defaults.global.defaultColor = '#333333'
 
 const Chart = {
