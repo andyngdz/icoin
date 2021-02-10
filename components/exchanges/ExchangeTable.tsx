@@ -19,11 +19,11 @@ const ExchangeTable: React.FC<IExchangeTableProps> = ({ edges }) => {
         <TableRow>
           <TableCell>Rank</TableCell>
           <TableCell>Name</TableCell>
-          <TableCell align="right">Trading Pairs</TableCell>
           <TableCell>Top Pair</TableCell>
-          <TableCell>Volume (24h)</TableCell>
-          <TableCell>Total (%)</TableCell>
-          <TableCell>Status</TableCell>
+          <TableCell align="right">Trading Pairs</TableCell>
+          <TableCell align="right">Volume (24h)</TableCell>
+          <TableCell align="right">Total (%)</TableCell>
+          <TableCell align="center">Status</TableCell>
         </TableRow>
       </TableHead>
       <TableBody>

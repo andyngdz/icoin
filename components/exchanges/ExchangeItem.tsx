@@ -1,3 +1,4 @@
+import { ExchangeStatus } from 'components'
 import { Format } from 'services'
 import { INode } from 'types'
 import { TableRow, TableCell } from '@material-ui/core'
@@ -14,20 +15,23 @@ const ExchangeItem: React.FC<IExchangeItemProps> = ({ node }) => {
     topPairBaseSymbol,
     topPairQuoteSymbol,
     volumeUsd24Hr,
-    percentTotalVolume
+    percentTotalVolume,
+    updatedAt
   } = node
 
   return (
     <TableRow>
       <TableCell>{rank}</TableCell>
       <TableCell>{name}</TableCell>
-      <TableCell align="right">{tradingPairs}</TableCell>
       <TableCell>
         {topPairBaseSymbol}/{topPairQuoteSymbol}
       </TableCell>
-      <TableCell>{Format.currency(volumeUsd24Hr)}</TableCell>
-      <TableCell>{Format.percent(percentTotalVolume)}</TableCell>
-      <TableCell>Status</TableCell>
+      <TableCell align="right">{tradingPairs}</TableCell>
+      <TableCell align="right">{Format.currency(volumeUsd24Hr)}</TableCell>
+      <TableCell align="right">{Format.percent(percentTotalVolume)}</TableCell>
+      <TableCell align="center">
+        <ExchangeStatus updatedAt={updatedAt} />
+      </TableCell>
     </TableRow>
   )
 }
