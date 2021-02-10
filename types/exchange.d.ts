@@ -32,7 +32,7 @@ export interface IEdgeNode {
   node: INode
 }
 
-export interface IExchange {
+export interface IExchanges {
   edges: Array<IEdgeNode>
 
   pageInfo: IPageInfo
