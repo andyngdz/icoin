@@ -1,5 +1,6 @@
 import { INode } from 'types'
-import { makeStyles } from '@material-ui/core'
+import { Tooltip, makeStyles } from '@material-ui/core'
+import { formatDistance } from 'date-fns'
 import clsx from 'clsx'
 
 type TExchangeStatusProps = Pick<INode, 'updatedAt'>
@@ -26,18 +27,28 @@ const useStyles = makeStyles(
   }
 )
 
-const ExchangeStatus: React.FC<TExchangeStatusProps> = ({
+const ExchangeStatus: React.FC<Partial<TExchangeStatusProps>> = ({
   updatedAt
 }): React.ReactElement => {
   const classes = useStyles()
 
+  const getTooltipTitle = () => {
+    if (updatedAt) {
+      return formatDistance(updatedAt, Date.now(), { addSuffix: true })
+    }
+
+    return 'Not available'
+  }
+
   return (
-    <div
-      className={clsx(classes.status, {
-        [classes.available]: !!updatedAt,
-        [classes.notAvailable]: !updatedAt
-      })}
-    />
+    <Tooltip title={getTooltipTitle()} placement="right">
+      <div
+        className={clsx(classes.status, {
+          [classes.available]: !!updatedAt,
+          [classes.notAvailable]: !updatedAt
+        })}
+      />
+    </Tooltip>
   )
 }
 
