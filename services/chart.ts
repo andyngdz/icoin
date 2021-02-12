@@ -152,7 +152,6 @@ const Chart = {
               {
                 position: 'right',
                 gridLines: {
-                  drawBorder: false,
                   display: false
                 },
                 ticks: {
