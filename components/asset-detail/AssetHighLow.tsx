@@ -53,7 +53,12 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
       <Paper className={classes.hightLow}>
         <List>
           <ListItem>
-            <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
+            <SymbolIcon
+              type="black"
+              name={name}
+              symbol={symbol}
+              className={classes.icon}
+            />
           </ListItem>
           <ListItem>
             <ListItemText>
@@ -63,7 +68,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
             </ListItemText>
             <ListItemSecondaryAction>
               <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightBold" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(high)}
                 </Box>
               </Typography>
@@ -77,7 +82,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
             </ListItemText>
             <ListItemSecondaryAction>
               <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightBold" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(low)}
                 </Box>
               </Typography>
@@ -91,7 +96,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
             </ListItemText>
             <ListItemSecondaryAction>
               <Typography variant="h6" component="span">
-                <Box fontWeight="fontWeightBold" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.currency(average)}
                 </Box>
               </Typography>
@@ -105,7 +110,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
             </ListItemText>
             <ListItemSecondaryAction>
               <ValueColor value={changePercent24Hr}>
-                <Box fontWeight="fontWeightBold" component="span">
+                <Box fontWeight="fontWeightMedium" component="span">
                   {Format.percent(changePercent24Hr)}
                 </Box>
               </ValueColor>
