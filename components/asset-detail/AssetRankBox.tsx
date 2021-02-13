@@ -19,10 +19,10 @@ const AssetRankBox: React.FC<TAssetRankBoxProps> = ({ rank }) => {
 
   return (
     <div className={classes.rank}>
-      <Typography variant="h4">
+      <Typography variant="h5" gutterBottom>
         <Box fontWeight="fontWeightBold">Rank</Box>
       </Typography>
-      <Typography variant="h3">
+      <Typography variant="h5">
         <Box fontWeight="fontWeightBold">{rank}</Box>
       </Typography>
     </div>

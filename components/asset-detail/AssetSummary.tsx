@@ -4,17 +4,13 @@ import {
   Link,
   Grid,
   Box,
+  Paper,
   makeStyles
 } from '@material-ui/core'
 import { Format, numberFormatter } from 'services'
 import { ICommonRouteParams, IAssetSummary } from 'types'
 import { Render } from 'use-react-common'
-import {
-  useLivePrice,
-  AssetRankBox,
-  ContainerWrapper,
-  PaperWrapper
-} from 'components'
+import { useLivePrice, AssetRankBox, ContainerWrapper } from 'components'
 import { useQuery, COIN_INFORMATION } from 'apollo'
 
 interface IAssetSummaryContent extends ICommonRouteParams {
@@ -24,7 +20,7 @@ interface IAssetSummaryContent extends ICommonRouteParams {
 const useStyles = makeStyles(
   theme => ({
     information: {
-      paddingBottom: theme.spacing(3)
+      padding: theme.spacing(2)
     }
   }),
   {
@@ -63,71 +59,79 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
 
   return (
     <ContainerWrapper>
-      <PaperWrapper>
-        <Grid spacing={2} container>
-          <Grid xs={12} sm={2} item>
+      <Paper>
+        <Grid
+          className={classes.information}
+          justify="space-between"
+          spacing={2}
+          container
+        >
+          <Grid item>
             <AssetRankBox rank={rank} />
           </Grid>
-          <Grid xs={12} sm={10} item>
-            <Grid container>
-              <Grid className={classes.information} spacing={2} container>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    {name} ({symbol})
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(price)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Market Cap
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(marketCapUsd)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Volume (24h)
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {Format.currency(volumeUsd24Hr)}
-                    </Box>
-                  </Typography>
-                </Grid>
-                <Grid xs={12} sm={3} item>
-                  <Typography variant="h6" color="textSecondary" gutterBottom>
-                    Supply
-                  </Typography>
-                  <Typography variant="h6">
-                    <Box fontWeight={600} component="span">
-                      {numberFormatter.format(supply)}
-                    </Box>
-                  </Typography>
-                </Grid>
-              </Grid>
-              <Grid spacing={2} container>
-                <Grid item>
-                  <Link href={explorer} color="inherit" target="_blank">
-                    <Button variant="outlined">Explorer</Button>
-                  </Link>
-                </Grid>
-                <Grid item>
-                  <Link href={website} color="inherit" target="_blank">
-                    <Button variant="outlined">Website</Button>
-                  </Link>
-                </Grid>
-              </Grid>
-            </Grid>
+          <Grid item>
+            <Typography variant="h5" color="textSecondary" gutterBottom>
+              {name} ({symbol})
+            </Typography>
+            <Typography variant="h5">
+              <Box fontWeight={600} component="span">
+                {Format.currency(price)}
+              </Box>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="h5" color="textSecondary" gutterBottom>
+              Market Cap
+            </Typography>
+            <Typography variant="h5">
+              <Box fontWeight={600} component="span">
+                {Format.currency(marketCapUsd)}
+              </Box>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="h5" color="textSecondary" gutterBottom>
+              Volume (24h)
+            </Typography>
+            <Typography variant="h5">
+              <Box fontWeight={600} component="span">
+                {Format.currency(volumeUsd24Hr)}
+              </Box>
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Typography variant="h5" color="textSecondary" gutterBottom>
+              Supply
+            </Typography>
+            <Typography variant="h5">
+              <Box fontWeight={600} component="span">
+                {numberFormatter.format(supply)}
+              </Box>
+            </Typography>
           </Grid>
         </Grid>
-      </PaperWrapper>
+        <Grid
+          justify="flex-end"
+          className={classes.information}
+          spacing={2}
+          container
+        >
+          <Grid item>
+            <Link href={explorer} color="inherit" target="_blank">
+              <Button variant="contained" color="primary">
+                Explorer
+              </Button>
+            </Link>
+          </Grid>
+          <Grid item>
+            <Link href={website} color="inherit" target="_blank">
+              <Button variant="contained" color="primary">
+                Website
+              </Button>
+            </Link>
+          </Grid>
+        </Grid>
+      </Paper>
     </ContainerWrapper>
   )
 }
