@@ -35,7 +35,7 @@ const LineChart: React.FC<ILineChart> = ({
    *
    */
   const customTooltipLabel = (tooltipItem: ChartTooltipItem) => {
-    const label = Format.currency(Number(tooltipItem.value))
+    const label = Format.currency(Format.toNumber(tooltipItem, 'value'))
     return label
   }
 

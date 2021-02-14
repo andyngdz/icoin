@@ -35,7 +35,7 @@ const Format = {
     return newData
   },
 
-  toNumber: <T>(data: T, path: PropertyPath): Number => Number(get(data, path))
+  toNumber: <T>(data: T, path: PropertyPath): number => Number(get(data, path))
 }
 
 export { Format, numberFormatter, percentFormatter }
