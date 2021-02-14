@@ -49,7 +49,7 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
   const classes = useStyles()
   const { time, onTimeChange } = useTime()
   const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
-  const [hightLowData, setHigtLowData] = useState<IAssetHistory>()
+  const [hightLowData, setHighLowData] = useState<IAssetHistory>()
   const isPositive = get(hightLowData, 'asset.changePercent24Hr') > 0
 
   useEffect(() => {
@@ -59,7 +59,7 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
 
   useEffect(() => {
     if (data) {
-      setHigtLowData(data)
+      setHighLowData(data)
     }
   }, [data])
 
