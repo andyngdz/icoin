@@ -9,7 +9,7 @@ import {
   TimeSelection,
   useTime
 } from 'components'
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { useLazyQuery, COIN_CHART } from 'apollo'
 
 const useStyles = makeStyles(
@@ -27,9 +27,9 @@ const useStyles = makeStyles(
       display: 'flex',
       flexDirection: 'column',
       justifyContent: 'space-between',
+      flex: 1,
       paddingTop: theme.spacing(3),
-      paddingBottom: theme.spacing(3),
-      flex: 1
+      paddingBottom: theme.spacing(3)
     },
 
     timeSelection: {
@@ -46,19 +46,26 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
   id
 }): React.ReactElement => {
   const classes = useStyles()
-  const { time, onTimeChange } = useTime()
   const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
+  const [hightLowData, setHigtLowData] = useState<IAssetHistory>()
+  const { time, onTimeChange } = useTime()
 
   useEffect(() => {
     const interval = Chart.calculateInterval(id, time)
     getIntervals({ variables: interval })
   }, [time])
 
+  useEffect(() => {
+    if (data) {
+      setHigtLowData(data)
+    }
+  }, [data])
+
   return (
     <ContainerWrapper>
       <div className={classes.section}>
         <Paper className={classes.information}>
-          <AssetHighLow data={data} />
+          <AssetHighLow data={hightLowData} />
           <Divider light />
           <AssetSummary id={id} />
         </Paper>
