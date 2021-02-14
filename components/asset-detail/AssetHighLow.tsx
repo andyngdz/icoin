@@ -34,7 +34,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
 
   return Render.ensure(readyData => {
     const { asset, assetHistories } = readyData
-    const convertedAssetHistories = Format.arrayToNumber(assetHistories, [
+    const convertedAssetHistories = Format.toNumbers(assetHistories, [
       'priceUsd'
     ])
     const { name, symbol, changePercent24Hr } = asset

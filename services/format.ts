@@ -17,10 +17,7 @@ const Format = {
 
   percent: (value: number): string => percentFormatter.format(value / 100),
 
-  arrayToNumber: <T extends Object>(
-    data: Array<T>,
-    keys: Array<keyof T>
-  ): T[] => {
+  toNumbers: <T extends Object>(data: Array<T>, keys: Array<keyof T>): T[] => {
     const cloneData = cloneDeep(data)
 
     const newData: Array<T> = cloneData.map(object => {

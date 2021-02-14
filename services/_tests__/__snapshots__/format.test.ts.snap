@@ -1,6 +1,10 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Format Should return correct array to number format 1`] = `
+exports[`Format Should return correct big number format 1`] = `"$12.35b"`;
+
+exports[`Format Should return correct currency format 1`] = `"$6,789.00"`;
+
+exports[`Format Should return correct number data in an array 1`] = `
 Array [
   Object {
     "date": "Sat, 30 Jan 2021 06:00:00 GMT",
@@ -19,10 +23,6 @@ Array [
   },
 ]
 `;
-
-exports[`Format Should return correct big number format 1`] = `"$12.35b"`;
-
-exports[`Format Should return correct currency format 1`] = `"$6,789.00"`;
 
 exports[`Format Should return correct percent format 1`] = `"25.00%"`;
 

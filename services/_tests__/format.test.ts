@@ -14,8 +14,8 @@ describe('Format', () => {
     expect(Format.percent(25)).toMatchSnapshot()
   })
 
-  it('Should return correct array to number format', () => {
-    expect(Format.arrayToNumber(assetsString, ['priceUsd'])).toMatchSnapshot()
+  it('Should return correct number data in an array', () => {
+    expect(Format.toNumbers(assetsString, ['priceUsd'])).toMatchSnapshot()
   })
 
   it('Should return correct to number format', () => {
