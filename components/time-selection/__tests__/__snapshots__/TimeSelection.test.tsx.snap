@@ -12,7 +12,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -35,7 +35,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -58,7 +58,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -81,7 +81,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -104,7 +104,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -127,7 +127,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -150,7 +150,7 @@ Object {
           class="MuiGrid-root MuiGrid-item"
         >
           <div
-            class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+            class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
             role="button"
             tabindex="0"
           >
@@ -180,7 +180,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-colorPrimary MuiChip-clickableColorPrimary MuiChip-outlined MuiChip-outlinedPrimary MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -203,7 +203,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -226,7 +226,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -249,7 +249,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -272,7 +272,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -295,7 +295,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >
@@ -318,7 +318,7 @@ Object {
         class="MuiGrid-root MuiGrid-item"
       >
         <div
-          class="MuiButtonBase-root MuiChip-root MuiChip-clickable"
+          class="MuiButtonBase-root MuiChip-root MuiChip-outlined MuiChip-clickable"
           role="button"
           tabindex="0"
         >

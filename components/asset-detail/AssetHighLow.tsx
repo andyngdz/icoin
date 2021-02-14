@@ -49,12 +49,12 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography component="span" color="textSecondary">
+            <Typography color="textSecondary" variant="subtitle2">
               High
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography component="span">
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.currency(high)}
               </Box>
@@ -63,12 +63,12 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography component="span" color="textSecondary">
+            <Typography color="textSecondary" variant="subtitle2">
               Low
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography component="span">
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.currency(low)}
               </Box>
@@ -77,12 +77,12 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography component="span" color="textSecondary">
+            <Typography color="textSecondary" variant="subtitle2">
               Average
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography component="span">
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.currency(average)}
               </Box>
@@ -91,12 +91,12 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography component="span" color="textSecondary">
+            <Typography color="textSecondary" variant="subtitle2">
               Change
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <ValueColor value={changePercent24Hr}>
+            <ValueColor value={changePercent24Hr} variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.percent(changePercent24Hr)}
               </Box>

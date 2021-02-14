@@ -24,25 +24,25 @@ Object {
             <div
               class="MuiListItemText-root"
             >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
               >
                 High
-              </span>
+              </h6>
             </div>
           </div>
           <div
             class="MuiListItemSecondaryAction-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
                 class="MuiBox-root MuiBox-root-3"
               >
                 $33,782.08
               </span>
-            </span>
+            </h6>
           </div>
         </li>
         <li
@@ -54,25 +54,25 @@ Object {
             <div
               class="MuiListItemText-root"
             >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
               >
                 Low
-              </span>
+              </h6>
             </div>
           </div>
           <div
             class="MuiListItemSecondaryAction-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
                 class="MuiBox-root MuiBox-root-4"
               >
                 $33,459.09
               </span>
-            </span>
+            </h6>
           </div>
         </li>
         <li
@@ -84,25 +84,25 @@ Object {
             <div
               class="MuiListItemText-root"
             >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
               >
                 Average
-              </span>
+              </h6>
             </div>
           </div>
           <div
             class="MuiListItemSecondaryAction-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2"
             >
               <span
                 class="MuiBox-root MuiBox-root-5"
               >
                 $33,620.58
               </span>
-            </span>
+            </h6>
           </div>
         </li>
         <li
@@ -114,18 +114,18 @@ Object {
             <div
               class="MuiListItemText-root"
             >
-              <span
-                class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+              <h6
+                class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
               >
                 Change
-              </span>
+              </h6>
             </div>
           </div>
           <div
             class="MuiListItemSecondaryAction-root"
           >
             <span
-              class="MuiTypography-root ValueColor-up-6 MuiTypography-body1"
+              class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
             >
               <span
                 class="MuiBox-root MuiBox-root-8"
@@ -158,25 +158,25 @@ Object {
           <div
             class="MuiListItemText-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
             >
               High
-            </span>
+            </h6>
           </div>
         </div>
         <div
           class="MuiListItemSecondaryAction-root"
         >
-          <span
-            class="MuiTypography-root MuiTypography-body1"
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
               class="MuiBox-root MuiBox-root-3"
             >
               $33,782.08
             </span>
-          </span>
+          </h6>
         </div>
       </li>
       <li
@@ -188,25 +188,25 @@ Object {
           <div
             class="MuiListItemText-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
             >
               Low
-            </span>
+            </h6>
           </div>
         </div>
         <div
           class="MuiListItemSecondaryAction-root"
         >
-          <span
-            class="MuiTypography-root MuiTypography-body1"
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
               class="MuiBox-root MuiBox-root-4"
             >
               $33,459.09
             </span>
-          </span>
+          </h6>
         </div>
       </li>
       <li
@@ -218,25 +218,25 @@ Object {
           <div
             class="MuiListItemText-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
             >
               Average
-            </span>
+            </h6>
           </div>
         </div>
         <div
           class="MuiListItemSecondaryAction-root"
         >
-          <span
-            class="MuiTypography-root MuiTypography-body1"
+          <h6
+            class="MuiTypography-root MuiTypography-subtitle2"
           >
             <span
               class="MuiBox-root MuiBox-root-5"
             >
               $33,620.58
             </span>
-          </span>
+          </h6>
         </div>
       </li>
       <li
@@ -248,18 +248,18 @@ Object {
           <div
             class="MuiListItemText-root"
           >
-            <span
-              class="MuiTypography-root MuiTypography-body1 MuiTypography-colorTextSecondary"
+            <h6
+              class="MuiTypography-root MuiTypography-subtitle2 MuiTypography-colorTextSecondary"
             >
               Change
-            </span>
+            </h6>
           </div>
         </div>
         <div
           class="MuiListItemSecondaryAction-root"
         >
           <span
-            class="MuiTypography-root ValueColor-up-6 MuiTypography-body1"
+            class="MuiTypography-root ValueColor-up-6 MuiTypography-subtitle2"
           >
             <span
               class="MuiBox-root MuiBox-root-8"

@@ -9,6 +9,7 @@ import {
   TimeSelection,
   useTime
 } from 'components'
+import { get } from 'lodash'
 import { useEffect, useState } from 'react'
 import { useLazyQuery, COIN_CHART } from 'apollo'
 
@@ -46,9 +47,10 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
   id
 }): React.ReactElement => {
   const classes = useStyles()
+  const { time, onTimeChange } = useTime()
   const [getIntervals, { data }] = useLazyQuery<IAssetHistory>(COIN_CHART)
   const [hightLowData, setHigtLowData] = useState<IAssetHistory>()
-  const { time, onTimeChange } = useTime()
+  const isPositive = get(hightLowData, 'asset.changePercent24Hr') > 0
 
   useEffect(() => {
     const interval = Chart.calculateInterval(id, time)
@@ -70,7 +72,7 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
           <AssetSummary id={id} />
         </Paper>
         <Paper className={classes.wrapper}>
-          <LineChart time={time} data={data} />
+          <LineChart isPositive={isPositive} time={time} data={data} />
           <div className={classes.timeSelection}>
             <TimeSelection time={time} onTimeChange={onTimeChange} />
           </div>

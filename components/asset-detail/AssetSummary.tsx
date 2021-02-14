@@ -53,22 +53,26 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
       <List>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Rank</Typography>
+            <Typography color="textSecondary" variant="subtitle2">
+              Rank
+            </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Box fontWeight="fontWeightMedium" component="span">
-              {rank}
-            </Box>
+            <Typography variant="subtitle2">
+              <Box fontWeight="fontWeightMedium" component="span">
+                {rank}
+              </Box>
+            </Typography>
           </ListItemSecondaryAction>
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">
+            <Typography color="textSecondary" variant="subtitle2">
               {name} ({symbol})
             </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography>
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.currency(price)}
               </Box>
@@ -77,10 +81,12 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Market Cap</Typography>
+            <Typography color="textSecondary" variant="subtitle2">
+              Market Cap
+            </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography>
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.bigNumber(marketCapUsd)}
               </Box>
@@ -89,10 +95,12 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Volume (24h)</Typography>
+            <Typography color="textSecondary" variant="subtitle2">
+              Volume (24h)
+            </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography>
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {Format.bigNumber(volumeUsd24Hr)}
               </Box>
@@ -101,22 +109,12 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Supply</Typography>
-          </ListItemText>
-          <ListItemSecondaryAction>
-            <Typography>
-              <Box fontWeight="fontWeightMedium" component="span">
-                {numberFormatter.format(supply)}
-              </Box>
+            <Typography color="textSecondary" variant="subtitle2">
+              Supply
             </Typography>
-          </ListItemSecondaryAction>
-        </ListItem>
-        <ListItem>
-          <ListItemText>
-            <Typography color="textSecondary">Supply</Typography>
           </ListItemText>
           <ListItemSecondaryAction>
-            <Typography>
+            <Typography variant="subtitle2">
               <Box fontWeight="fontWeightMedium" component="span">
                 {numberFormatter.format(supply)}
               </Box>
@@ -128,7 +126,9 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
       <List>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Explorer</Typography>
+            <Typography color="textSecondary" variant="subtitle2">
+              Explorer
+            </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
             <Link href={explorer} color="inherit" target="_blank">
@@ -140,7 +140,9 @@ const AssetSummaryContent: React.FC<IAssetSummaryContent> = ({
         </ListItem>
         <ListItem>
           <ListItemText>
-            <Typography color="textSecondary">Website</Typography>
+            <Typography color="textSecondary" variant="subtitle2">
+              Website
+            </Typography>
           </ListItemText>
           <ListItemSecondaryAction>
             <Link href={website} color="inherit" target="_blank">
