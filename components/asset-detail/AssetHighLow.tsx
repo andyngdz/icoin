@@ -45,12 +45,7 @@ const AssetHighLow: React.FC<IAssetHighLowProps> = ({
     return (
       <List>
         <ListItem>
-          <SymbolIcon
-            type="black"
-            name={name}
-            symbol={symbol}
-            className={classes.icon}
-          />
+          <SymbolIcon name={name} symbol={symbol} className={classes.icon} />
         </ListItem>
         <ListItem>
           <ListItemText>
