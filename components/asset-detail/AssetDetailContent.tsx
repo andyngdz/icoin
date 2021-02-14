@@ -1,8 +1,9 @@
 import { Chart } from 'services'
 import { IAssetHistory, ICommonRouteParams } from 'types'
-import { Paper, makeStyles } from '@material-ui/core'
+import { Paper, Divider, makeStyles } from '@material-ui/core'
 import {
   AssetHighLow,
+  AssetSummary,
   ContainerWrapper,
   LineChart,
   TimeSelection,
@@ -13,28 +14,35 @@ import { useLazyQuery, COIN_CHART } from 'apollo'
 
 const useStyles = makeStyles(
   theme => ({
-    chartSection: {
+    section: {
       display: 'flex'
     },
 
-    chartWrapper: {
-      flex: 1,
+    information: {
+      minWidth: theme.spacing(35),
+      marginRight: theme.spacing(3)
+    },
+
+    wrapper: {
+      display: 'flex',
+      flexDirection: 'column',
+      justifyContent: 'space-between',
       paddingTop: theme.spacing(3),
-      paddingBottom: theme.spacing(3)
+      paddingBottom: theme.spacing(3),
+      flex: 1
     },
 
     timeSelection: {
-      paddingTop: theme.spacing(3),
       paddingLeft: theme.spacing(3),
       paddingRight: theme.spacing(3)
     }
   }),
   {
-    name: 'AssetChart'
+    name: 'AssetDetailContent'
   }
 )
 
-const AssetChart: React.FC<ICommonRouteParams> = ({
+const AssetDetailContent: React.FC<ICommonRouteParams> = ({
   id
 }): React.ReactElement => {
   const classes = useStyles()
@@ -48,9 +56,13 @@ const AssetChart: React.FC<ICommonRouteParams> = ({
 
   return (
     <ContainerWrapper>
-      <div className={classes.chartSection}>
-        <AssetHighLow data={data} />
-        <Paper className={classes.chartWrapper}>
+      <div className={classes.section}>
+        <Paper className={classes.information}>
+          <AssetHighLow data={data} />
+          <Divider light />
+          <AssetSummary id={id} />
+        </Paper>
+        <Paper className={classes.wrapper}>
           <LineChart time={time} data={data} />
           <div className={classes.timeSelection}>
             <TimeSelection time={time} onTimeChange={onTimeChange} />
@@ -61,4 +73,4 @@ const AssetChart: React.FC<ICommonRouteParams> = ({
   )
 }
 
-export { AssetChart }
+export { AssetDetailContent }

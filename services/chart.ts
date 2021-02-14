@@ -129,12 +129,16 @@ const Chart = {
       data: chartData,
       options: merge<ChartOptions, ChartOptions>(
         {
+          responsive: true,
+
           tooltips: {
             position: 'nearest'
           },
+
           legend: {
             display: false
           },
+
           scales: {
             xAxes: [
               {
@@ -148,6 +152,7 @@ const Chart = {
                 }
               }
             ],
+
             yAxes: [
               {
                 position: 'right',

@@ -33,8 +33,7 @@ const TimeSelection: React.FC<ITime> = ({
         return (
           <Grid key={value} item>
             <Chip
-              variant="outlined"
-              color={isSelected ? 'primary' : 'secondary'}
+              color={isSelected ? 'primary' : 'default'}
               onClick={() => onTimeChange(value)}
               avatar={<Avatar>{value}</Avatar>}
               label={getLabel(value)}
