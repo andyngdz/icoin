@@ -39,7 +39,24 @@ Object {
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
                 scope="col"
               >
-                Volume (24H)
+                <span
+                  aria-disabled="false"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  role="button"
+                  tabindex="0"
+                >
+                  Volume (24H)
+                  <svg
+                    aria-hidden="true"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                    />
+                  </svg>
+                </span>
               </th>
               <th
                 class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
@@ -254,7 +271,24 @@ Object {
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
               scope="col"
             >
-              Volume (24H)
+              <span
+                aria-disabled="false"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
+                role="button"
+                tabindex="0"
+              >
+                Volume (24H)
+                <svg
+                  aria-hidden="true"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
+                  focusable="false"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 12l-1.41-1.41L13 16.17V4h-2v12.17l-5.58-5.59L4 12l8 8 8-8z"
+                  />
+                </svg>
+              </span>
             </th>
             <th
               class="MuiTableCell-root MuiTableCell-head MuiTableCell-alignRight"
