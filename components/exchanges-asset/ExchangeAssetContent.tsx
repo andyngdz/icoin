@@ -34,7 +34,7 @@ const ExchangeAssetContent: React.FC<IExchangeContentProps> = ({
           {assetMarkets.edges.map(edgeNode => {
             const { node } = edgeNode
 
-            return <ExchangeAssetItem key={node.id} node={node} />
+            return <ExchangeAssetItem key={node.id} assetNode={node} />
           })}
         </TableBody>
       </Table>

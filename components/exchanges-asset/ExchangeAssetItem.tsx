@@ -4,10 +4,12 @@ import { IAssetNode } from 'types'
 import { TableRow, TableCell } from '@material-ui/core'
 
 interface IExchangeAssetItemProps {
-  node: IAssetNode
+  assetNode: IAssetNode
 }
 
-const ExchangeAssetItem: React.FC<IExchangeAssetItemProps> = ({ node }) => {
+const ExchangeAssetItem: React.FC<IExchangeAssetItemProps> = ({
+  assetNode
+}) => {
   const {
     exchangeName,
     baseSymbol,
@@ -16,7 +18,7 @@ const ExchangeAssetItem: React.FC<IExchangeAssetItemProps> = ({ node }) => {
     volumeUsd24Hr,
     percentVolume,
     updatedAt
-  } = node
+  } = assetNode
 
   return (
     <TableRow>
