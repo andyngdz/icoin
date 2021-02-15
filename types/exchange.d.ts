@@ -8,6 +8,10 @@ export interface IExchangeParams {
   sort: string
 }
 
+export interface IExchangeAssetParams extends IExchangeParams {
+  assetId: string
+}
+
 export interface INode {
   id: string
 
