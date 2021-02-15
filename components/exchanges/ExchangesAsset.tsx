@@ -1,19 +1,16 @@
-import { ExchangeContent } from 'components'
-import { IExchangeAssetParams, IExchangeResponse } from 'types'
-import { useQuery, EXCHANGE } from 'apollo'
+import { EXCHANGE_ASSET } from 'apollo'
+import { ExchangeContent, useExchange } from 'components'
 
 interface IExchangesAssetProps {
   assetId: string
 }
 
 const ExchangesAsset: React.FC<IExchangesAssetProps> = ({ assetId }) => {
-  const { data } = useQuery<IExchangeResponse, IExchangeAssetParams>(EXCHANGE, {
-    variables: {
-      assetId,
-      direction: 'ASC',
-      first: 20,
-      sort: 'rank'
-    }
+  const { data } = useExchange(EXCHANGE_ASSET, {
+    assetId,
+    first: 20,
+    direction: 'ASC',
+    sort: 'rank'
   })
 
   return <ExchangeContent data={data} />

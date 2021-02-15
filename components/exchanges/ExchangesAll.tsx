@@ -1,14 +1,11 @@
-import { ContainerWrapper, ExchangeContent } from 'components'
-import { IExchangeParams, IExchangeResponse } from 'types'
-import { useQuery, EXCHANGE } from 'apollo'
+import { ContainerWrapper, ExchangeContent, useExchange } from 'components'
+import { EXCHANGE } from 'apollo'
 
 const ExchangesAll: React.FC = () => {
-  const { data } = useQuery<IExchangeResponse, IExchangeParams>(EXCHANGE, {
-    variables: {
-      direction: 'ASC',
-      first: 20,
-      sort: 'rank'
-    }
+  const { data } = useExchange(EXCHANGE, {
+    first: 20,
+    direction: 'ASC',
+    sort: 'rank'
   })
 
   return (
