@@ -1,5 +1,4 @@
 export * from './useChartData'
-export * from './useExchange'
 export * from './useGlobal'
 export * from './useLivePrice'
 export * from './useLivePrices'

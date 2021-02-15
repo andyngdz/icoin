@@ -1,6 +1,5 @@
 import { ExchangeItem } from 'components'
-import { IExchangeResponse } from 'types'
-import { Render } from 'use-react-common'
+import { IExchanges, IEdgeNode, INode } from 'types'
 import {
   TableContainer,
   Table,
@@ -12,38 +11,34 @@ import {
 } from '@material-ui/core'
 
 interface IExchangeContentProps {
-  data: IExchangeResponse
+  exchanges: IExchanges<IEdgeNode<INode>>
 }
 
-const ExchangeContent: React.FC<IExchangeContentProps> = ({ data }) => {
-  return Render.ensure(readyData => {
-    const { exchanges } = readyData
+const ExchangeContent: React.FC<IExchangeContentProps> = ({ exchanges }) => {
+  return (
+    <TableContainer component={Paper}>
+      <Table>
+        <TableHead>
+          <TableRow>
+            <TableCell>Rank</TableCell>
+            <TableCell>Name</TableCell>
+            <TableCell>Top Pair</TableCell>
+            <TableCell align="right">Trading Pairs</TableCell>
+            <TableCell align="right">Volume (24H)</TableCell>
+            <TableCell align="right">Total (%)</TableCell>
+            <TableCell align="center">Status</TableCell>
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {exchanges.edges.map(edgeNode => {
+            const { node } = edgeNode
 
-    return (
-      <TableContainer component={Paper}>
-        <Table>
-          <TableHead>
-            <TableRow>
-              <TableCell>Rank</TableCell>
-              <TableCell>Name</TableCell>
-              <TableCell>Top Pair</TableCell>
-              <TableCell align="right">Trading Pairs</TableCell>
-              <TableCell align="right">Volume (24h)</TableCell>
-              <TableCell align="right">Total (%)</TableCell>
-              <TableCell align="center">Status</TableCell>
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {exchanges.edges.map(edgeNode => {
-              const { node } = edgeNode
-
-              return <ExchangeItem key={node.id} node={node} />
-            })}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    )
-  }, data)
+            return <ExchangeItem key={node.id} node={node} />
+          })}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  )
 }
 
 export { ExchangeContent }

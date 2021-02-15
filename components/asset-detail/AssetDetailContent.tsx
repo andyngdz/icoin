@@ -11,7 +11,6 @@ import {
   useTime
 } from 'components'
 import { useEffect, useState } from 'react'
-import { useDeepCompareEffect } from 'react-use'
 import { useLazyQuery, COIN_CHART } from 'apollo'
 
 const useStyles = makeStyles(
@@ -62,7 +61,7 @@ const AssetDetailContent: React.FC<ICommonRouteParams> = ({
     getIntervals({ variables: interval })
   }, [time])
 
-  useDeepCompareEffect(() => {
+  useEffect(() => {
     if (data) {
       setHistories(data)
     }

@@ -1,4 +1,4 @@
-import { ExchangesAll } from 'components'
+import { Exchanges } from 'components'
 import Head from 'next/head'
 
 const ExchangesPage = (): React.ReactElement => {
@@ -7,7 +7,7 @@ const ExchangesPage = (): React.ReactElement => {
       <Head>
         <title>Exchanges</title>
       </Head>
-      <ExchangesAll />
+      <Exchanges />
     </>
   )
 }
