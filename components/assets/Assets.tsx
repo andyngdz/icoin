@@ -38,8 +38,8 @@ const AssetsContent: React.FC<IAssetsContentProps> = ({
     [page]
   )
 
-  return Render.ensure(({ data: readyData }) => {
-    const { data } = readyData
+  return Render.ensure(({ data: assetData }) => {
+    const { data } = assetData
 
     return (
       <ContainerWrapper>
