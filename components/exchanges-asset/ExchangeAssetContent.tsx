@@ -27,9 +27,27 @@ const ExchangeAssetContent: React.FC<IExchangeContentProps> = ({
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Exchange</TableCell>
+            <TableCell>
+              <TableSortLabel
+                active={sorts?.exchangeName.active}
+                direction={Sort.toMaterialDirection(
+                  sorts?.exchangeName.direction
+                )}
+                onClick={() => onSort('exchangeName')}
+              >
+                Exchange
+              </TableSortLabel>
+            </TableCell>
             <TableCell>Pair</TableCell>
-            <TableCell align="right">Price</TableCell>
+            <TableCell align="right">
+              <TableSortLabel
+                active={sorts?.priceUsd.active}
+                direction={Sort.toMaterialDirection(sorts?.priceUsd.direction)}
+                onClick={() => onSort('priceUsd')}
+              >
+                Price
+              </TableSortLabel>
+            </TableCell>
             <TableCell align="right">
               <TableSortLabel
                 active={sorts?.volumeUsd24Hr.active}
@@ -41,8 +59,26 @@ const ExchangeAssetContent: React.FC<IExchangeContentProps> = ({
                 Volume (24H)
               </TableSortLabel>
             </TableCell>
-            <TableCell align="right">Volume (%)</TableCell>
-            <TableCell align="center">Status</TableCell>
+            <TableCell align="right">
+              <TableSortLabel
+                active={sorts?.percentVolume.active}
+                direction={Sort.toMaterialDirection(
+                  sorts?.percentVolume.direction
+                )}
+                onClick={() => onSort('percentVolume')}
+              >
+                Volume (%)
+              </TableSortLabel>
+            </TableCell>
+            <TableCell align="center">
+              <TableSortLabel
+                active={sorts?.updatedAt.active}
+                direction={Sort.toMaterialDirection(sorts?.updatedAt.direction)}
+                onClick={() => onSort('updatedAt')}
+              >
+                Status
+              </TableSortLabel>
+            </TableCell>
           </TableRow>
         </TableHead>
         <TableBody>

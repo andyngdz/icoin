@@ -7,10 +7,13 @@ interface IExchangesAssetProps {
 }
 
 const ExchangesAsset: React.FC<IExchangesAssetProps> = ({ assetId }) => {
-  const { current, sorts, onSort } = useSort(['volumeUsd24Hr'], {
-    field: 'volumeUsd24Hr',
-    direction: 'DESC'
-  })
+  const { current, sorts, onSort } = useSort(
+    ['exchangeName', 'priceUsd', 'volumeUsd24Hr', 'percentVolume', 'updatedAt'],
+    {
+      field: 'volumeUsd24Hr',
+      direction: 'DESC'
+    }
+  )
 
   const { data } = useQuery(EXCHANGE_ASSET, {
     variables: {
