@@ -26,9 +26,9 @@ const useStyles = makeStyles(
 
 const TopBarContent: React.FC<ITopBarContentProps> = ({ globalData }) => {
   const classes = useStyles()
+  const { marketTotal, asset } = globalData
 
-  if (globalData.marketTotal && globalData.asset) {
-    const { marketTotal, asset } = globalData
+  if (marketTotal && asset) {
     const { assets, markets, exchangeVolumeUsd24Hr } = marketTotal
     const marketCap = Format.toNumber(marketTotal, 'marketCapUsd')
     const bitcoinCap = Format.toNumber(asset, 'marketCapUsd')

@@ -16,15 +16,11 @@ type IAssetsContentProps = Pick<IMarketTotal, 'assets'>
 const Assets = (): React.ReactElement => {
   const globalData = useSelector((store: IRootStore) => store.globalData)
 
-  if (globalData && globalData.marketTotal) {
-    const {
-      marketTotal: { assets }
-    } = globalData
+  return Render.ensure(readyMarketTotal => {
+    const { assets } = readyMarketTotal
 
     return <AssetsContent assets={assets} />
-  }
-
-  return <></>
+  }, globalData.marketTotal)
 }
 
 const AssetsContent: React.FC<IAssetsContentProps> = ({

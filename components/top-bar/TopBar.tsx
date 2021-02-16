@@ -24,7 +24,7 @@ const TopBar = (): React.ReactElement => {
   return (
     <AppBar position="relative" color="secondary" elevation={0}>
       <Toolbar className={classes.toolBar}>
-        {globalData && <TopBarContent globalData={globalData} />}
+        <TopBarContent globalData={globalData} />
       </Toolbar>
       <Divider light />
     </AppBar>
