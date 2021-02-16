@@ -1,9 +1,9 @@
 import { Format } from 'services'
-import { IGlobalData } from 'types/global'
+import { IGlobalData } from 'types'
 import { makeStyles, Typography } from '@material-ui/core'
 
 interface ITopBarContentProps {
-  data: IGlobalData
+  globalData: IGlobalData
 }
 
 const useStyles = makeStyles(
@@ -24,49 +24,54 @@ const useStyles = makeStyles(
   }
 )
 
-const TopBarContent: React.FC<ITopBarContentProps> = ({ data }) => {
+const TopBarContent: React.FC<ITopBarContentProps> = ({ globalData }) => {
   const classes = useStyles()
 
-  return (
-    <div className={classes.content}>
-      <div className={classes.info}>
-        <Typography variant="caption" component="span">
-          Cryptocurrencies:&nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            {data.active_cryptocurrencies}
+  if (globalData.marketTotal && globalData.asset) {
+    const { marketTotal, asset } = globalData
+    const { assets, markets, exchangeVolumeUsd24Hr } = marketTotal
+    const marketCap = Format.toNumber(marketTotal, 'marketCapUsd')
+    const bitcoinCap = Format.toNumber(asset, 'marketCapUsd')
+
+    return (
+      <div className={classes.content}>
+        <div className={classes.info}>
+          <Typography variant="caption" component="span">
+            Assets:&nbsp;
+            <Typography variant="caption" component="span" color="primary">
+              {assets}
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography variant="caption" component="span">
-          Markets:&nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            {data.markets}
+          <Typography variant="caption" component="span">
+            Markets:&nbsp;
+            <Typography variant="caption" component="span" color="primary">
+              {markets}
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography variant="caption" component="span">
-          Market Cap:&nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            {Format.currency(data.total_market_cap.usd)}
+          <Typography variant="caption" component="span">
+            Market Cap:&nbsp;
+            <Typography variant="caption" component="span" color="primary">
+              {Format.currency(marketCap)}
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography variant="caption" component="span">
-          24h Volume:&nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            {Format.currency(data.total_volume.usd)}
+          <Typography variant="caption" component="span">
+            24h Volume:&nbsp;
+            <Typography variant="caption" component="span" color="primary">
+              {Format.currency(exchangeVolumeUsd24Hr)}
+            </Typography>
           </Typography>
-        </Typography>
-        <Typography variant="caption" component="span">
-          Dominance:&nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            BTC {Format.percent(data.market_cap_percentage.btc)}
+          <Typography variant="caption" component="span">
+            Dominance:&nbsp;
+            <Typography variant="caption" component="span" color="primary">
+              BTC {Format.percent((bitcoinCap * 100) / marketCap)}
+            </Typography>
           </Typography>
-          &nbsp; &nbsp;
-          <Typography variant="caption" component="span" color="primary">
-            ETH {Format.percent(data.market_cap_percentage.eth)}
-          </Typography>
-        </Typography>
+        </div>
       </div>
-    </div>
-  )
+    )
+  }
+
+  return <></>
 }
 
 export { TopBarContent }
