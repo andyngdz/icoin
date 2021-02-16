@@ -12,51 +12,51 @@ Object {
           class="TopBarContent-info-2"
         >
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Assets: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               1658
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Markets: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               6734
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Market Cap: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               $1,482,969,770,164
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             24h Volume: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               $88,640,281,239
             </span>
           </span>
           <span
-            class="MuiTypography-root MuiTypography-caption"
+            class="MuiTypography-root MuiTypography-overline"
           >
             Dominance: 
             <span
-              class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+              class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
             >
               BTC 
               61.57%
@@ -74,51 +74,51 @@ Object {
         class="TopBarContent-info-2"
       >
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Assets: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             1658
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Markets: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             6734
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Market Cap: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             $1,482,969,770,164
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           24h Volume: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             $88,640,281,239
           </span>
         </span>
         <span
-          class="MuiTypography-root MuiTypography-caption"
+          class="MuiTypography-root MuiTypography-overline"
         >
           Dominance: 
           <span
-            class="MuiTypography-root MuiTypography-caption MuiTypography-colorPrimary"
+            class="MuiTypography-root MuiTypography-overline MuiTypography-colorPrimary"
           >
             BTC 
             61.57%

@@ -36,33 +36,33 @@ const TopBarContent: React.FC<ITopBarContentProps> = ({ globalData }) => {
     return (
       <div className={classes.content}>
         <div className={classes.info}>
-          <Typography variant="caption" component="span">
+          <Typography variant="overline" component="span">
             Assets:&nbsp;
-            <Typography variant="caption" component="span" color="primary">
+            <Typography variant="overline" component="span" color="primary">
               {assets}
             </Typography>
           </Typography>
-          <Typography variant="caption" component="span">
+          <Typography variant="overline" component="span">
             Markets:&nbsp;
-            <Typography variant="caption" component="span" color="primary">
+            <Typography variant="overline" component="span" color="primary">
               {markets}
             </Typography>
           </Typography>
-          <Typography variant="caption" component="span">
+          <Typography variant="overline" component="span">
             Market Cap:&nbsp;
-            <Typography variant="caption" component="span" color="primary">
+            <Typography variant="overline" component="span" color="primary">
               {Format.currency(marketCap)}
             </Typography>
           </Typography>
-          <Typography variant="caption" component="span">
+          <Typography variant="overline" component="span">
             24h Volume:&nbsp;
-            <Typography variant="caption" component="span" color="primary">
+            <Typography variant="overline" component="span" color="primary">
               {Format.currency(exchangeVolumeUsd24Hr)}
             </Typography>
           </Typography>
-          <Typography variant="caption" component="span">
+          <Typography variant="overline" component="span">
             Dominance:&nbsp;
-            <Typography variant="caption" component="span" color="primary">
+            <Typography variant="overline" component="span" color="primary">
               BTC {Format.percent((bitcoinCap * 100) / marketCap)}
             </Typography>
           </Typography>
