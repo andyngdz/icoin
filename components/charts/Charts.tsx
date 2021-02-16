@@ -18,7 +18,7 @@ const Charts = (): React.ReactElement => {
   const theme = useTheme()
 
   useEffect(() => {
-    const charts = new TradingView.widget({
+    new TradingView.widget({
       container_id: 'charts',
       symbol: 'BITBAY:BTCUSD',
       interval: 'D',
@@ -31,8 +31,6 @@ const Charts = (): React.ReactElement => {
       allow_symbol_change: true,
       autosize: true
     })
-
-    return () => charts.remove()
   }, [])
 
   return (
