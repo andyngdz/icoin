@@ -23,14 +23,14 @@ Object {
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                  class="MuiButtonBase-root MuiTableSortLabel-root"
                   role="button"
                   tabindex="0"
                 >
                   Rank
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -53,7 +53,7 @@ Object {
                   Name
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -82,7 +82,7 @@ Object {
                   Trading Pairs
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -98,14 +98,14 @@ Object {
               >
                 <span
                   aria-disabled="false"
-                  class="MuiButtonBase-root MuiTableSortLabel-root"
+                  class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
                   role="button"
                   tabindex="0"
                 >
                   Volume (24H)
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -128,7 +128,7 @@ Object {
                   Total (%)
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -151,7 +151,7 @@ Object {
                   Status
                   <svg
                     aria-hidden="true"
-                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                    class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                     focusable="false"
                     viewBox="0 0 24 24"
                   >
@@ -475,14 +475,14 @@ Object {
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
+                class="MuiButtonBase-root MuiTableSortLabel-root"
                 role="button"
                 tabindex="0"
               >
                 Rank
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -505,7 +505,7 @@ Object {
                 Name
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -534,7 +534,7 @@ Object {
                 Trading Pairs
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -550,14 +550,14 @@ Object {
             >
               <span
                 aria-disabled="false"
-                class="MuiButtonBase-root MuiTableSortLabel-root"
+                class="MuiButtonBase-root MuiTableSortLabel-root MuiTableSortLabel-active"
                 role="button"
                 tabindex="0"
               >
                 Volume (24H)
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -580,7 +580,7 @@ Object {
                 Total (%)
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >
@@ -603,7 +603,7 @@ Object {
                 Status
                 <svg
                   aria-hidden="true"
-                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionAsc"
+                  class="MuiSvgIcon-root MuiTableSortLabel-icon MuiTableSortLabel-iconDirectionDesc"
                   focusable="false"
                   viewBox="0 0 24 24"
                 >

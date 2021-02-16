@@ -7,10 +7,20 @@ import { useSort } from 'use-react-common'
 describe('ExchangeContent', () => {
   it('Should render it correctly', async () => {
     const { result } = renderHook(() =>
-      useSort(['rank', 'name'], {
-        field: 'rank',
-        direction: 'ASC'
-      })
+      useSort(
+        [
+          'rank',
+          'name',
+          'tradingPairs',
+          'volumeUsd24Hr',
+          'percentTotalVolume',
+          'updatedAt'
+        ],
+        {
+          field: 'volumeUsd24Hr',
+          direction: 'DESC'
+        }
+      )
     )
     const { sorts, onSort } = result.current
 

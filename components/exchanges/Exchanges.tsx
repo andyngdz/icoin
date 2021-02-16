@@ -4,10 +4,20 @@ import { IExchangeResponse, IExchangeParams } from 'types'
 import { Render, useSort } from 'use-react-common'
 
 const Exchanges: React.FC = () => {
-  const { current, sorts, onSort } = useSort(['rank', 'name'], {
-    field: 'rank',
-    direction: 'ASC'
-  })
+  const { current, sorts, onSort } = useSort(
+    [
+      'rank',
+      'name',
+      'tradingPairs',
+      'volumeUsd24Hr',
+      'percentTotalVolume',
+      'updatedAt'
+    ],
+    {
+      field: 'volumeUsd24Hr',
+      direction: 'DESC'
+    }
+  )
 
   const { data } = useQuery<IExchangeResponse, IExchangeParams>(EXCHANGE, {
     variables: {
