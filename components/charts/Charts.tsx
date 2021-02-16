@@ -3,9 +3,25 @@ import { useEffect } from 'react'
 import { useTheme, ContainerWrapper } from 'components'
 
 const useStyles = makeStyles(
-  () => ({
+  theme => ({
     container: {
-      height: '75vh'
+      height: '75vh',
+      position: 'relative'
+    },
+
+    charts: {
+      height: '100%',
+      width: '100%'
+    },
+
+    overlay: {
+      position: 'absolute',
+      pointerEvents: 'none',
+      border: `1px solid ${theme.palette.common.white}`,
+      top: 0,
+      bottom: 0,
+      left: 0,
+      right: 0
     }
   }),
   {
@@ -20,8 +36,7 @@ const Charts = (): React.ReactElement => {
   useEffect(() => {
     new TradingView.widget({
       container_id: 'charts',
-      symbol: 'BITBAY:BTCUSD',
-      interval: 'D',
+      symbol: 'BINANCE:BTCUSD',
       timezone: 'exchange',
       theme: 'light',
       style: '1',
@@ -35,8 +50,9 @@ const Charts = (): React.ReactElement => {
 
   return (
     <ContainerWrapper>
-      <Paper>
-        <div id="charts" className={classes.container} />
+      <Paper className={classes.container}>
+        <div id="charts" className={classes.charts} />
+        <div className={classes.overlay} />
       </Paper>
     </ContainerWrapper>
   )
