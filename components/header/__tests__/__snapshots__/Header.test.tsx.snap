@@ -49,6 +49,10 @@ Object {
               class="MuiTouchRipple-root"
             />
           </button>
+          <div
+            class="PrivateSwipeArea-root-6 PrivateSwipeArea-anchorRight-8"
+            style="width: 20px;"
+          />
         </div>
       </header>
     </div>
@@ -98,6 +102,10 @@ Object {
             class="MuiTouchRipple-root"
           />
         </button>
+        <div
+          class="PrivateSwipeArea-root-6 PrivateSwipeArea-anchorRight-8"
+          style="width: 20px;"
+        />
       </div>
     </header>
   </div>,

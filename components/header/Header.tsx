@@ -1,6 +1,6 @@
 import { AppBar, Toolbar, makeStyles } from '@material-ui/core'
 import { ICoinLogo } from 'components'
-import { Menu } from 'components/header/Menu'
+import { Menu } from 'components/menu/Menu'
 import React from 'react'
 
 const useStyles = makeStyles(

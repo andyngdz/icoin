@@ -1,14 +1,14 @@
 import { Link, Button, Typography, LinkProps } from '@material-ui/core'
 import { MouseEvent } from 'react'
-import { useRouter } from 'next/router'
+import { useChangeRoute } from 'components/hooks'
 
-const Route: React.FC<LinkProps> = ({ title, href, ...restProps }) => {
-  const router = useRouter()
+const RouteDesktop: React.FC<LinkProps> = ({ title, href, ...restProps }) => {
+  const { onPush, router } = useChangeRoute()
   const isRouted = href === router.route
 
   const onClick = (event: MouseEvent<HTMLAnchorElement>) => {
     event.preventDefault()
-    router.push(href)
+    onPush(href)
   }
 
   return (
@@ -20,4 +20,4 @@ const Route: React.FC<LinkProps> = ({ title, href, ...restProps }) => {
   )
 }
 
-export { Route }
+export { RouteDesktop }

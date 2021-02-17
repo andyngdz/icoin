@@ -1,5 +1,5 @@
 import { Grid, makeStyles } from '@material-ui/core'
-import { Route } from 'components'
+import { RouteDesktop } from 'components'
 import { Routes } from 'services'
 import React from 'react'
 
@@ -21,13 +21,13 @@ const MenuDesktop = (): React.ReactElement => {
   return (
     <Grid className={classes.menu} spacing={2} container>
       <Grid item>
-        <Route href={Routes.home} title="Market Cap" />
+        <RouteDesktop href={Routes.home} title="Market Cap" />
       </Grid>
       <Grid item>
-        <Route href={Routes.exchanges} title="Exchanges" />
+        <RouteDesktop href={Routes.exchanges} title="Exchanges" />
       </Grid>
       <Grid item>
-        <Route href={Routes.charts} title="Charts" />
+        <RouteDesktop href={Routes.charts} title="Charts" />
       </Grid>
     </Grid>
   )
