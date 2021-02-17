@@ -4,10 +4,10 @@ import { Routes } from 'services'
 import React from 'react'
 
 const useStyles = makeStyles(
-  () => ({
+  theme => ({
     menu: {
-      display: 'flex',
-      justifyContent: 'space-evenly'
+      paddingLeft: theme.spacing(4),
+      paddingRight: theme.spacing(4)
     }
   }),
   {
@@ -19,13 +19,15 @@ const Menu = (): React.ReactElement => {
   const classes = useStyles()
 
   return (
-    <Grid container>
-      <Grid xs={12} sm={8} lg={4} item>
-        <div className={classes.menu}>
-          <Route href={Routes.home} title="Market Cap" />
-          <Route href={Routes.exchanges} title="Exchanges" />
-          <Route href={Routes.charts} title="Charts" />
-        </div>
+    <Grid className={classes.menu} spacing={2} container>
+      <Grid item>
+        <Route href={Routes.home} title="Market Cap" />
+      </Grid>
+      <Grid item>
+        <Route href={Routes.exchanges} title="Exchanges" />
+      </Grid>
+      <Grid item>
+        <Route href={Routes.charts} title="Charts" />
       </Grid>
     </Grid>
   )
