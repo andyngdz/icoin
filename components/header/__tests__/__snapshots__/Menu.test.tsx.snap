@@ -5,179 +5,55 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="MuiGrid-root Menu-menu-1 MuiGrid-container MuiGrid-spacing-xs-2"
+      <button
+        class="MuiButtonBase-root MuiIconButton-root"
+        tabindex="0"
+        type="button"
       >
-        <div
-          class="MuiGrid-root MuiGrid-item"
+        <span
+          class="MuiIconButton-label"
         >
-          <a
-            class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-            href="/"
+          <svg
+            aria-hidden="true"
+            class="MuiSvgIcon-root"
+            focusable="false"
+            viewBox="0 0 24 24"
           >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeLarge MuiButton-sizeLarge"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  Market Cap
-                </h6>
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-item"
-        >
-          <a
-            class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-            href="/exchanges"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSizeLarge MuiButton-sizeLarge"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  Exchanges
-                </h6>
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-        </div>
-        <div
-          class="MuiGrid-root MuiGrid-item"
-        >
-          <a
-            class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-            href="/charts"
-          >
-            <button
-              class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSizeLarge MuiButton-sizeLarge"
-              tabindex="0"
-              type="button"
-            >
-              <span
-                class="MuiButton-label"
-              >
-                <h6
-                  class="MuiTypography-root MuiTypography-subtitle2"
-                >
-                  Charts
-                </h6>
-              </span>
-              <span
-                class="MuiTouchRipple-root"
-              />
-            </button>
-          </a>
-        </div>
-      </div>
+            <path
+              d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+            />
+          </svg>
+        </span>
+        <span
+          class="MuiTouchRipple-root"
+        />
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="MuiGrid-root Menu-menu-1 MuiGrid-container MuiGrid-spacing-xs-2"
+    <button
+      class="MuiButtonBase-root MuiIconButton-root"
+      tabindex="0"
+      type="button"
     >
-      <div
-        class="MuiGrid-root MuiGrid-item"
+      <span
+        class="MuiIconButton-label"
       >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-          href="/"
+        <svg
+          aria-hidden="true"
+          class="MuiSvgIcon-root"
+          focusable="false"
+          viewBox="0 0 24 24"
         >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textPrimary MuiButton-textSizeLarge MuiButton-sizeLarge"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                Market Cap
-              </h6>
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </a>
-      </div>
-      <div
-        class="MuiGrid-root MuiGrid-item"
-      >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-          href="/exchanges"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSizeLarge MuiButton-sizeLarge"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                Exchanges
-              </h6>
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </a>
-      </div>
-      <div
-        class="MuiGrid-root MuiGrid-item"
-      >
-        <a
-          class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorInherit"
-          href="/charts"
-        >
-          <button
-            class="MuiButtonBase-root MuiButton-root MuiButton-text MuiButton-textSizeLarge MuiButton-sizeLarge"
-            tabindex="0"
-            type="button"
-          >
-            <span
-              class="MuiButton-label"
-            >
-              <h6
-                class="MuiTypography-root MuiTypography-subtitle2"
-              >
-                Charts
-              </h6>
-            </span>
-            <span
-              class="MuiTouchRipple-root"
-            />
-          </button>
-        </a>
-      </div>
-    </div>
+          <path
+            d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"
+          />
+        </svg>
+      </span>
+      <span
+        class="MuiTouchRipple-root"
+      />
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

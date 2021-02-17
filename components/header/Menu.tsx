@@ -1,36 +1,16 @@
-import { Grid, makeStyles } from '@material-ui/core'
-import { Route } from 'components'
-import { Routes } from 'services'
+import { MenuDesktop, MenuMobile } from 'components'
+import { useMediaQuery, Theme } from '@material-ui/core'
+
 import React from 'react'
 
-const useStyles = makeStyles(
-  theme => ({
-    menu: {
-      paddingLeft: theme.spacing(4),
-      paddingRight: theme.spacing(4)
-    }
-  }),
-  {
-    name: 'Menu'
-  }
-)
-
 const Menu = (): React.ReactElement => {
-  const classes = useStyles()
+  const matches = useMediaQuery((theme: Theme) => theme.breakpoints.up('sm'))
 
-  return (
-    <Grid className={classes.menu} spacing={2} container>
-      <Grid item>
-        <Route href={Routes.home} title="Market Cap" />
-      </Grid>
-      <Grid item>
-        <Route href={Routes.exchanges} title="Exchanges" />
-      </Grid>
-      <Grid item>
-        <Route href={Routes.charts} title="Charts" />
-      </Grid>
-    </Grid>
-  )
+  if (matches) {
+    return <MenuDesktop />
+  }
+
+  return <MenuMobile />
 }
 
 export { Menu }
