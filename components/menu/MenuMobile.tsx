@@ -43,17 +43,17 @@ const MenuMobile = (): React.ReactElement => {
         <List>
           <RouteMobile
             href={Routes.home}
-            onAfterPush={onToggleMenu}
+            onAfterPushing={onToggleMenu}
             title="Market Cap"
           />
           <RouteMobile
             href={Routes.exchanges}
-            onAfterPush={onToggleMenu}
+            onAfterPushing={onToggleMenu}
             title="Exchanges"
           />
           <RouteMobile
             href={Routes.charts}
-            onAfterPush={onToggleMenu}
+            onAfterPushing={onToggleMenu}
             title="Charts"
           />
         </List>

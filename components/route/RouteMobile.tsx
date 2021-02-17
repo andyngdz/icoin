@@ -8,13 +8,13 @@ import { MouseEvent } from 'react'
 import { useChangeRoute } from 'components/hooks'
 
 interface IRouteMobileProps extends LinkProps {
-  onAfterPush: VoidFunction
+  onAfterPushing: VoidFunction
 }
 
 const RouteMobile: React.FC<IRouteMobileProps> = ({
   title,
   href,
-  onAfterPush
+  onAfterPushing
 }) => {
   const { onPush, router } = useChangeRoute()
   const isRouted = href === router.route
@@ -23,7 +23,7 @@ const RouteMobile: React.FC<IRouteMobileProps> = ({
     event.preventDefault()
     onPush(href)
 
-    if (onAfterPush) onAfterPush()
+    if (onAfterPushing) onAfterPushing()
   }
 
   return (
