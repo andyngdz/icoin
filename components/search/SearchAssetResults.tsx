@@ -1,4 +1,3 @@
-import React from 'react'
 import { ISearchResponse } from 'types'
 import {
   ListItem,
@@ -28,7 +27,7 @@ const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
 
   if (edges.length > 0) {
     return (
-      <React.Fragment>
+      <>
         {edges.map(({ node }) => {
           const { id, name, symbol } = node
 
@@ -50,7 +49,7 @@ const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
             </ListItem>
           )
         })}
-      </React.Fragment>
+      </>
     )
   }
 
