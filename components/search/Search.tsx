@@ -8,8 +8,10 @@ import {
   fade,
   makeStyles
 } from '@material-ui/core'
+import { throttle } from 'lodash'
+import { DURATION } from 'data'
 import { ContainerWrapper } from 'components'
-import { useState } from 'react'
+import { useState, ChangeEvent } from 'react'
 import SearchIcon from '@material-ui/icons/Search'
 
 const useStyles = makeStyles(
@@ -42,6 +44,10 @@ const Search = (): React.ReactElement => {
   const classes = useStyles()
   const [touch, setTouch] = useState(false)
 
+  const onChange = throttle((event: ChangeEvent<HTMLInputElement>) => {
+    console.info(event)
+  }, DURATION * 4)
+
   return (
     <section>
       <Paper className={classes.search} square>
@@ -60,6 +66,7 @@ const Search = (): React.ReactElement => {
                 )
               }}
               onClick={() => setTouch(true)}
+              onChange={onChange}
               className={classes.input}
               fullWidth
             />
