@@ -113,16 +113,16 @@ Object {
         <div
           class="MuiListItemText-root MuiListItemText-multiline"
         >
-          <span
+          <p
             class="MuiTypography-root MuiTypography-button"
           >
             Bitcoin
-          </span>
-          <p
-            class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
           >
             BTC
-          </p>
+          </span>
         </div>
       </li>
       <li
@@ -134,16 +134,16 @@ Object {
         <div
           class="MuiListItemText-root MuiListItemText-multiline"
         >
-          <span
+          <p
             class="MuiTypography-root MuiTypography-button"
           >
             Binance Coin
-          </span>
-          <p
-            class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
           >
             BNB
-          </p>
+          </span>
         </div>
       </li>
       <li
@@ -155,16 +155,16 @@ Object {
         <div
           class="MuiListItemText-root MuiListItemText-multiline"
         >
-          <span
+          <p
             class="MuiTypography-root MuiTypography-button"
           >
             Bitcoin Cash
-          </span>
-          <p
-            class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
           >
             BCH
-          </p>
+          </span>
         </div>
       </li>
       <li
@@ -176,16 +176,16 @@ Object {
         <div
           class="MuiListItemText-root MuiListItemText-multiline"
         >
-          <span
+          <p
             class="MuiTypography-root MuiTypography-button"
           >
             Bitcoin SV
-          </span>
-          <p
-            class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
           >
             BSV
-          </p>
+          </span>
         </div>
       </li>
       <li
@@ -197,16 +197,16 @@ Object {
         <div
           class="MuiListItemText-root MuiListItemText-multiline"
         >
-          <span
+          <p
             class="MuiTypography-root MuiTypography-button"
           >
             Binance USD
-          </span>
-          <p
-            class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+          </p>
+          <span
+            class="MuiTypography-root MuiTypography-caption"
           >
             BUSD
-          </p>
+          </span>
         </div>
       </li>
     </div>
@@ -221,16 +221,16 @@ Object {
       <div
         class="MuiListItemText-root MuiListItemText-multiline"
       >
-        <span
+        <p
           class="MuiTypography-root MuiTypography-button"
         >
           Bitcoin
-        </span>
-        <p
-          class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
         >
           BTC
-        </p>
+        </span>
       </div>
     </li>
     <li
@@ -242,16 +242,16 @@ Object {
       <div
         class="MuiListItemText-root MuiListItemText-multiline"
       >
-        <span
+        <p
           class="MuiTypography-root MuiTypography-button"
         >
           Binance Coin
-        </span>
-        <p
-          class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
         >
           BNB
-        </p>
+        </span>
       </div>
     </li>
     <li
@@ -263,16 +263,16 @@ Object {
       <div
         class="MuiListItemText-root MuiListItemText-multiline"
       >
-        <span
+        <p
           class="MuiTypography-root MuiTypography-button"
         >
           Bitcoin Cash
-        </span>
-        <p
-          class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
         >
           BCH
-        </p>
+        </span>
       </div>
     </li>
     <li
@@ -284,16 +284,16 @@ Object {
       <div
         class="MuiListItemText-root MuiListItemText-multiline"
       >
-        <span
+        <p
           class="MuiTypography-root MuiTypography-button"
         >
           Bitcoin SV
-        </span>
-        <p
-          class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
         >
           BSV
-        </p>
+        </span>
       </div>
     </li>
     <li
@@ -305,16 +305,16 @@ Object {
       <div
         class="MuiListItemText-root MuiListItemText-multiline"
       >
-        <span
+        <p
           class="MuiTypography-root MuiTypography-button"
         >
           Binance USD
-        </span>
-        <p
-          class="MuiTypography-root MuiListItemText-secondary MuiTypography-body2 MuiTypography-colorTextSecondary MuiTypography-displayBlock"
+        </p>
+        <span
+          class="MuiTypography-root MuiTypography-caption"
         >
           BUSD
-        </p>
+        </span>
       </div>
     </li>
   </div>,

@@ -40,8 +40,12 @@ const SearchAssetResults: React.FC<Pick<ISearchResponse, 'assets'>> = ({
                 className={classes.icon}
               />
               <ListItemText
-                primary={<Typography variant="button">{name}</Typography>}
-                secondary={symbol}
+                primary={
+                  <Typography variant="button" component="p">
+                    {name}
+                  </Typography>
+                }
+                secondary={<Typography variant="caption">{symbol}</Typography>}
               />
             </ListItem>
           )
