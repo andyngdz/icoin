@@ -4,13 +4,16 @@ import {
   InputAdornment,
   IconButton,
   ClickAwayListener,
+  CircularProgress,
   Fade,
   fade,
   makeStyles
 } from '@material-ui/core'
-import { throttle } from 'lodash'
-import { DURATION } from 'data'
 import { ContainerWrapper } from 'components'
+import { DURATION } from 'data'
+import { ISearchResponse } from 'types'
+import { SEARCH, useLazyQuery } from 'apollo'
+import { throttle } from 'lodash'
 import { useState, ChangeEvent } from 'react'
 import SearchIcon from '@material-ui/icons/Search'
 
@@ -43,9 +46,14 @@ const useStyles = makeStyles(
 const Search = (): React.ReactElement => {
   const classes = useStyles()
   const [touch, setTouch] = useState(false)
+  const [getSearches, { loading }] = useLazyQuery<ISearchResponse>(SEARCH)
 
   const onChange = throttle((event: ChangeEvent<HTMLInputElement>) => {
-    console.info(event)
+    const search = event.target.value
+
+    getSearches({
+      variables: { search }
+    })
   }, DURATION * 4)
 
   return (
@@ -60,7 +68,11 @@ const Search = (): React.ReactElement => {
                 endAdornment: (
                   <InputAdornment position="end">
                     <IconButton>
-                      <SearchIcon />
+                      {loading ? (
+                        <CircularProgress size="1rem" />
+                      ) : (
+                        <SearchIcon />
+                      )}
                     </IconButton>
                   </InputAdornment>
                 )
