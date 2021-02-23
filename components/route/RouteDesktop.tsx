@@ -13,7 +13,7 @@ const RouteDesktop: React.FC<LinkProps> = ({ title, href, ...restProps }) => {
 
   return (
     <Link onClick={onClick} color="inherit" href={href} {...restProps}>
-      <Button color={isRouted ? 'primary' : 'default'} size="large">
+      <Button variant={isRouted ? 'outlined' : 'text'} size="large">
         <Typography variant="subtitle2">{title}</Typography>
       </Button>
     </Link>
