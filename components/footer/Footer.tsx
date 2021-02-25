@@ -1,4 +1,4 @@
-import { ContainerWrapper, PaperWrapper } from 'components'
+import { ContainerWrapper, PaperWrapper, FollowUs } from 'components'
 import { Grid, Typography, Link } from '@material-ui/core'
 import NextLink from 'next/link'
 
@@ -85,6 +85,7 @@ const Footer = (): React.ReactElement => {
               <Grid item>
                 <Typography variant="button">FOLLOW US</Typography>
               </Grid>
+              <FollowUs />
             </Grid>
           </Grid>
         </Grid>
