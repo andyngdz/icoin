@@ -1,7 +1,7 @@
 import { AssetDetail } from 'components'
-import { useRouter } from 'next/router'
 import { capitalize } from 'lodash'
-import Head from 'next/head'
+import { NextSeo } from 'next-seo'
+import { useRouter } from 'next/router'
 
 const AsssetPage = (): React.ReactElement => {
   const router = useRouter()
@@ -9,11 +9,15 @@ const AsssetPage = (): React.ReactElement => {
 
   return (
     <>
-      <Head>
-        <title>
-          {capitalize(id as string)} - ICoin / Cryptocurrency Market Data
-        </title>
-      </Head>
+      <NextSeo
+        title={`${capitalize(
+          id as string
+        )} - ICoin / Cryptocurrency Market Data`}
+        description="Real-time cryptocurrency market cap rankings, trading charts, and more."
+        openGraph={{
+          images: [{ url: '/assets.png' }]
+        }}
+      />
       <AssetDetail />
     </>
   )

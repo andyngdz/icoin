@@ -1,12 +1,16 @@
-import Head from 'next/head'
 import { Charts } from 'components'
+import { NextSeo } from 'next-seo'
 
 const ChartsPage = (): React.ReactElement => {
   return (
     <>
-      <Head>
-        <title>Charts - ICoin / Cryptocurrency Market Data</title>
-      </Head>
+      <NextSeo
+        title="Charts - ICoin / Cryptocurrency Market Data"
+        description="Real-time cryptocurrency market cap rankings, trading charts, and more."
+        openGraph={{
+          images: [{ url: '/charts.png' }]
+        }}
+      />
       <Charts />
     </>
   )
