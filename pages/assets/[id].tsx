@@ -16,7 +16,7 @@ const AsssetPage = (): React.ReactElement => {
           )} - ICoin / Cryptocurrency Market Data`}
           description="Real-time cryptocurrency market cap rankings, trading charts, and more."
           openGraph={{
-            url: location.href,
+            url: router.pathname,
             images: [{ url: '/assets.png' }]
           }}
         />
