@@ -12,7 +12,7 @@ const HomePage = (): React.ReactElement => {
         description="Real-time cryptocurrency market cap rankings, trading charts, and more."
         openGraph={{
           url: router.pathname,
-          images: [{ url: '/main.png' }]
+          images: [{ url: `${process.env.NEXT_PUBLIC_BASE_URL}/main.png` }]
         }}
       />
       <Assets />
