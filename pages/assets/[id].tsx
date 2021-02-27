@@ -7,20 +7,25 @@ const AsssetPage = (): React.ReactElement => {
   const router = useRouter()
   const { id } = router.query
 
-  return (
-    <>
-      <NextSeo
-        title={`${capitalize(
-          id as string
-        )} - ICoin / Cryptocurrency Market Data`}
-        description="Real-time cryptocurrency market cap rankings, trading charts, and more."
-        openGraph={{
-          images: [{ url: '/assets.png' }]
-        }}
-      />
-      <AssetDetail />
-    </>
-  )
+  if (id) {
+    return (
+      <>
+        <NextSeo
+          title={`${capitalize(
+            id as string
+          )} - ICoin / Cryptocurrency Market Data`}
+          description="Real-time cryptocurrency market cap rankings, trading charts, and more."
+          openGraph={{
+            url: location.href,
+            images: [{ url: '/assets.png' }]
+          }}
+        />
+        <AssetDetail />
+      </>
+    )
+  }
+
+  return <></>
 }
 
 export default AsssetPage

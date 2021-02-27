@@ -8,6 +8,7 @@ const ExchangesPage = (): React.ReactElement => {
         title="Exchanges - ICoin / Cryptocurrency Market Data"
         description="Real-time cryptocurrency market cap rankings, trading charts, and more."
         openGraph={{
+          url: location.href,
           images: [{ url: '/charts.png' }]
         }}
       />
