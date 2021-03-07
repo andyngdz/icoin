@@ -1,7 +1,7 @@
 import { ApolloProvider, apolloClient } from 'apollo'
 import { AppProps } from 'next/app'
 import { Provider } from 'react-redux'
-import { Divider, ThemeProvider, CssBaseline } from '@material-ui/core'
+import { Divider, ThemeProvider, CssBaseline, Fade } from '@material-ui/core'
 import {
   TopBar,
   Header,
@@ -15,10 +15,12 @@ import {
 } from 'components'
 import { useEffect } from 'react'
 import { DefaultSeo } from 'next-seo'
+import { useRouter } from 'next/router'
 import Store from 'states'
 import 'styles/globals.css'
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
+  const router = useRouter()
   const theme = useTheme()
 
   useEffect(() => {
@@ -50,7 +52,11 @@ const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
             <TopBar />
             <Header />
             <Search />
-            <Component {...pageProps} />
+            <Fade key={router.asPath} in>
+              <div>
+                <Component {...pageProps} />
+              </div>
+            </Fade>
             <Disclaimer />
             <Divider light />
             <Footer />
