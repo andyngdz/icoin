@@ -1,14 +1,9 @@
 {
   "name": "icoin",
   "version": "0.1.0",
-  "author": {
-    "name": "Andy D. Ng",
-    "url": "https://github.com/andyngdz",
-    "email": "itc.anhduy@gmail.com"
-  },
   "repository": {
     "type": "git",
-    "url": "git@github.com:andyngdz/icoin.git"
+    "url": "git@github.com:eui-official/icoin.git"
   },
   "private": true,
   "scripts": {

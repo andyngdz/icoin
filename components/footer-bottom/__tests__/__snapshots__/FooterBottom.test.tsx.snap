@@ -53,7 +53,7 @@ Object {
             <section>
               <a
                 class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
-                href="https://github.com/andyngdz/icoin"
+                href="https://github.com/eui-official/icoin"
                 target="_blank"
               >
                 <button
@@ -135,7 +135,7 @@ Object {
           <section>
             <a
               class="MuiTypography-root MuiLink-root MuiLink-underlineNone MuiTypography-colorPrimary"
-              href="https://github.com/andyngdz/icoin"
+              href="https://github.com/eui-official/icoin"
               target="_blank"
             >
               <button
