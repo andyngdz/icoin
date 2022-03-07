@@ -2,7 +2,7 @@
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-[![CI](https://github.com/andyngdz/icoin/actions/workflows/test.yml/badge.svg)](https://github.com/andyngdz/icoin/actions/workflows/test.yml) [![CodeFactor](https://www.codefactor.io/repository/github/andyngdz/icoin/badge)](https://www.codefactor.io/repository/github/andyngdz/icoin) [![DeepScan grade](https://deepscan.io/api/teams/12700/projects/15730/branches/318987/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=12700&pid=15730&bid=318987)
+[![CI](https://github.com/eui-official/icoin/actions/workflows/test.yml/badge.svg)](https://github.com/eui-official/icoin/actions/workflows/test.yml) [![CodeFactor](https://www.codefactor.io/repository/github/eui-official/icoin/badge)](https://www.codefactor.io/repository/github/eui-official/icoin) [![DeepScan grade](https://deepscan.io/api/teams/12700/projects/15730/branches/318987/badge/grade.svg)](https://deepscan.io/dashboard#view=project&tid=12700&pid=15730&bid=318987)
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ You can start editing the page by modifying `pages/index.tsx`. The page auto-upd
 
 ## Code of Conduct
 
-Our [Code of Conduct](https://github.com/andyngdz/icoin/CODE_OF_CONDUCT.md) applies to all members
+Our [Code of Conduct](https://github.com/eui-official/icoin/CODE_OF_CONDUCT.md) applies to all members
 
 ## Learn More
 
@@ -62,7 +62,3 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Special thanks to
 
 COINCAP - https://coincap.io/ for providing the data
-
-## Authors
-
-- Andy D. Ng – [Github](https://github.com/andyngdz)
